@@ -11,7 +11,17 @@
     margin: auto;
     position: relative;
 
+    .homeLineBreak {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 100%;
+        height: 1px;
+        background-color: #d3d3d3;
+        border-radius: 2px;
+    }
+
     .home1 {
+        margin-bottom: 10px;
         grid-area: home1;
         background-color: #ffffff;
         box-shadow: 2px 2px 4px rgba(3, 3, 3, 0.1);
@@ -130,6 +140,7 @@
     }
 
     .home2 {
+
         grid-area: home2;
         background-color: #d9ecff;
         border-radius: 12px;
@@ -156,11 +167,13 @@
                 grid-area: home211;
                 margin-top: auto;
                 margin-bottom: auto;
+
                 .home2110 {
                     min-height: 250px;
                     margin-right: 10%;
                     margin-top: auto;
                     margin-bottom: auto;
+
                     .home2111 {
                         text-align: left;
                         color: #2b2c2b;
@@ -169,6 +182,7 @@
                         font-weight: 800;
                         line-height: 62px;
                     }
+
                     .home2112 {
                         text-align: left;
                         color: #2b2c2b;
@@ -176,9 +190,11 @@
                         font-family: "Poppins";
                     }
                 }
+
                 .home2113 {
                     margin-right: 10%;
                     text-align: left;
+
                     button {
                         cursor: pointer;
                         width: 274px;
@@ -223,21 +239,25 @@
 
         .home22 {
             grid-area: home22;
-            .home221{
+
+            .home221 {
                 text-align: left;
                 color: #2b2c2b;
                 font-size: 24px;
                 font-weight: 800;
 
             }
-            .home222{
-                display:grid;
+
+            .home222 {
+                display: grid;
                 grid-template-columns: repeat(5, auto);
                 gap: 5%;
-                .home2221{
-                    .home22211{
+
+                .home2221 {
+                    .home22211 {
                         width: 100%;
-                        img{
+
+                        img {
                             width: 100%;
                             height: 100%;
                             width: 150px;
@@ -246,28 +266,236 @@
                             background-position: center center;
                             background-size: cover;
                             background-repeat: no-repeat;
-                    }
+                        }
 
-                  }
+                    }
                 }
             }
+
         }
 
         .home23 {
             grid-area: home23;
+
+            .home231 {
+                color: #2b2c2b;
+                font-size: 28px;
+                font-family: "Poppins";
+                font-weight: 800;
+                line-height: 36px;
+                text-align: center;
+                margin-bottom: 2%;
+            }
+
+            .home232 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 2%;
+
+                .home2321 {
+                    button {
+                        cursor: pointer;
+                        width: 88px;
+                        padding: 0px 8px;
+                        margin-top: 10px;
+                        border: 0;
+                        box-sizing: border-box;
+                        border-radius: 12px;
+                        background-color: #0b83ff;
+                        color: #ffffff;
+                        font-size: 16px;
+                        line-height: 20px;
+                        outline: none;
+                    }
+                }
+
+                .home2321:nth-child(1) {
+                    width: 100%;
+                    justify-content: center;
+                }
+
+                .home2321:nth-child(2) {
+                    width: calc(100% - 40px); /* Adjusts the width to accommodate margin */
+                    justify-content: space-between; /* Ensures the buttons are spread out */
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+
+            }
         }
 
         .home24 {
             grid-area: home24;
+            margin-bottom: 5%;
+            .home241 {
+                color: #2b2c2b;
+                font-size: 28px;
+                font-weight: 800;
+                line-height: 36px;
+                text-align: center;
+                margin-bottom: 2%;
+            }
+
+            .home242 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 2%;
+
+                .home2421 {
+                    display: flex;
+                    flex-direction: column;
+                    width: 30%;
+                    /*height: 384px;*/
+                    background-color: #082a5e;
+                    color: #f9a825;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    text-align: left;
+
+                    .home24211 {
+                        margin-top: 5%;
+                        color: #f9a825;
+                        font-size: 20px;
+                        font-family: "Poppins";
+                        font-weight: 500;
+                        line-height: 26px;
+                    }
+
+                    .home24212 {
+                        color: #f9a825;
+                        font-size: 32px;
+                        font-family: "Poppins";
+                        font-weight: 700;
+                        line-height: 42px;
+                        margin-bottom: 2%;
+                    }
+
+                    .home24213 {
+                        display: flex;
+                        margin-top:20px;
+                        .home242131 , .home242132{
+
+                            button {
+                                margin-right: 10px;
+                                cursor: pointer;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 20px;
+                                height: 20px;
+                                border: 0;
+                                box-sizing: border-box;
+                                border-radius: 12px;
+                                color: #030303;
+                                background-color: #ffffff;
+                                outline: none;
+                            }
+                        }
+
+
+                    }
+
+                    .home24214 {
+                        margin-top:20%;
+                        button {
+                            background-color: white;
+                            color: #1f77d2;
+                            border: none;
+                            padding: 10px 20px;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            border-radius: 5px;
+                            width: 100%;
+                            cursor: pointer;
+                            transition: background-color 0.3s;
+                        }
+
+                        button:hover {
+                            background-color: #f9a825;
+                            color: #082a5e;
+                        }
+                    }
+                    .home24215{
+                        margin-top:20%;
+                        button {
+                            border: none;
+                            padding: 10px 20px;
+                            text-transform: uppercase;
+                            width: 100%;
+                            cursor: pointer;
+                            transition: background-color 0.3s;
+                            border: 0;
+                            box-sizing: border-box;
+                            border-radius: 12px;
+
+                            font-size: 16px;
+                            font-family: "Poppins";
+                            font-weight: 500;
+                            line-height: 22px;
+                            outline: none;
+                            background-color: white;
+                            color: #1f77d2;
+                        }
+
+                        button:hover {
+                            background-color: #f9a825;
+                            color: #082a5e;
+                        }
+
+                    }
+                }
+
+            }
+
         }
     }
 
     .home3 {
         grid-area: home3;
-        background-color: #333333;
-        color: white;
+        color: black;
         text-align: center;
-        padding: 20px;
+        padding: 20px 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .home31{
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            .home311{
+              display: flex;
+                flex-direction: column;
+
+            }
+            .home312{
+                color: #2b2c2b;
+                font-size: 16px;
+                font-family: "Poppins";
+                font-weight: 700;
+                line-height: 24px;
+            }
+            .home313{
+                display: flex;
+                .home3131{
+                    img{
+                        color: #2b2c2b;
+                        fill: #2b2c2b;
+                        font-size: 32px;
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+
+            }
+        }
     }
 
 
