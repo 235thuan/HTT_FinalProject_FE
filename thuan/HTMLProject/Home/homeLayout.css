@@ -1,516 +1,733 @@
-.home0 {
-    display: grid;
-    grid-template-areas:
+@media screen and (max-width: 999px) {
+    * {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    * {
+        font-family: "Times New Roman", Times, serif;
+
+        img, image {
+            cursor: pointer;
+        }
+    }
+
+    .home0 {
+        display: grid;
+        grid-template-areas:
                 "home1  home1 home1"
                 "home2 home2 home2"
                 "home3 home3 home3 ";
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto 3fr auto;
-    gap: 10px;
-    max-width: 1200px;
-    margin: auto;
-    position: relative;
-
-    .homeLineBreak {
-        margin-top: 5%;
-        margin-bottom: 5%;
-        width: 100%;
-        height: 1px;
-        background-color: #d3d3d3;
-        border-radius: 2px;
-    }
-
-    .home1 {
-        margin-bottom: 10px;
-        grid-area: home1;
-        background-color: #ffffff;
-        box-shadow: 2px 2px 4px rgba(3, 3, 3, 0.1);
-        text-align: center;
-        padding: 20px;
-        color: #080a0b;
-        font-size: 16px;
-        font-family: "Poppins";
-        display: grid;
-        grid-template-areas:
-        "home11 home12 home13";
-        grid-template-columns: 0.2fr 0.7fr auto;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto 3fr auto;
         gap: 10px;
+        max-width: 1200px;
+        margin: auto;
+        position: relative;
 
-        .home11 {
-            grid-area: home11;
-            display: grid;
-            grid-template-areas: "logo title";
-            align-items: center;
-
-            .home111 {
-                grid-area: logo;
-
-                image {
-                    color: #030303;
-                    fill: #030303;
-                    font-size: 20px;
-                    width: 20px;
-                    height: 24px;
-                }
-            }
-
-            .home112 {
-                grid-area: title;
-                color: #030303;
-                font-size: 20px;
-                font-family: "Poppins";
-            }
+        .homeLineBreak {
+            margin-top: 5%;
+            margin-bottom: 5%;
+            width: 100%;
+            height: 1px;
+            background-color: #d3d3d3;
+            border-radius: 2px;
         }
 
-        .home12 {
-            grid-area: home12;
-            align-items: center;
-            display: flex;
-            flex-wrap: wrap; /* Allows items to wrap onto the next line */
-            justify-content: flex-start; /* Aligns items to the start of the flex container */
-            width: 100%; /* Ensures the container takes full width of its parent */
-            div input {
-                width: 100%;
-                padding: 0px 8px;
-                border: 1px solid #cbcbd0;
-                box-sizing: border-box;
-                border-radius: 12px;
-                background-color: rgba(255, 255, 255, 0.74);
-                color: #1d1d1f;
-                font-size: 14px;
-                font-family: "Poppins";
-                font-weight: 500;
-                outline: none;
-                margin-left: 80px;
-            }
+        .home1 {
+            margin-bottom: 10px;
+            grid-area: home1;
+            background-color: #ffffff;
+            box-shadow: 2px 2px 4px rgba(3, 3, 3, 0.1);
+            text-align: center;
+            padding: 20px;
+            color: #080a0b;
+            font-size: 16px;
 
-        }
-
-        .home13 {
-            grid-area: home13;
             display: grid;
-            grid-template-areas:"home131 home132 home133";
-            grid-template-columns: auto auto auto;
+            grid-template-areas:
+        "home11 home12 home13";
+            grid-template-columns: 0.5fr 1fr 2fr;
+
             gap: 10px;
-            align-items: center;
 
-            .home131 {
-                grid-area: home131;
+            .home11 {
+                grid-area: home11;
+                display: grid;
+                grid-template-areas: "logo title";
+                align-items: center;
+
+                .home111 {
+                    grid-area: logo;
+
+                    image {
+                        color: #030303;
+                        fill: #030303;
+                        font-size: 20px;
+                        width: 20px;
+                        height: 24px;
+                    }
+                }
+
+                .home112 {
+                    grid-area: title;
+                    color: #030303;
+                    font-size: 20px;
+
+                }
+            }
+
+            .home12 {
+                grid-area: home12;
+                align-items: center;
                 display: flex;
                 flex-wrap: wrap; /* Allows items to wrap onto the next line */
-                justify-content: flex-start; /* Aligns items to the start of the flex container */
-                width: 100%; /* Ensures the container takes full width of its parent */
+                justify-content: flex-start; /* Aligns items to the start of the flex container */ /* Ensures the container takes full width of its parent */
 
-
-                .home1311 {
-                    flex: 1 1 25%; /* Each item can grow and shrink but starts with a basis of one-third of the container's width */
-                    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
-                    padding: 5px; /* Optional padding for spacing and aesthetics */
-                    text-align: center;
+                div input {
+                    width: 100%;
+                    padding: 0px 8px;
+                    border: 1px solid #cbcbd0;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    background-color: rgba(255, 255, 255, 0.74);
+                    color: #1d1d1f;
+                    font-size: 14px;
                     font-weight: 500;
-                    color: #5d5d5b;
+                    outline: none;
+                    margin-left: 80px;
                 }
-
-                .home1311:active {
-                    color: #080a0b;
-                    font-weight: 700;
-                }
-            }
-
-            .home132 {
-                grid-area: home132;
-                display: flex;
-                flex-wrap: wrap; /* Allows items to wrap onto the next line */
-                justify-content: flex-start; /* Aligns items to the start of the flex container */
-                width: 100%; /* Ensures the container takes full width of its parent */
 
             }
 
-            .home133 {
-                grid-area: home133;
-                display: flex;
-                flex-wrap: wrap; /* Allows items to wrap onto the next line */
-                justify-content: flex-start; /* Aligns items to the start of the flex container */
-                width: 100%; /* Ensures the container takes full width of its parent */
+            .home13 {
+                grid-area: home13;
+                display: grid;
+                grid-template-areas:"home131 home132 home133";
+                grid-template-columns: 1fr auto auto;
+                align-items: center;
+                gap: 10px;
 
-                .home1331 {
-                    button {
-                        cursor: pointer;
-                        width: 110px;
-                        padding: 0px 8px;
-                        border: 0;
-                        box-sizing: border-box;
-                        border-radius: 12px;
-                        background-color: #0b83ff;
-                        color: #ffffff;
-                        font-size: 14px;
-                        font-family: "Poppins";
+                .home131 {
+                    grid-area: home131;
+                    display: flex;
+                    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+                    justify-content: flex-end; /* Aligns items to the start of the flex container */
+                    gap: 5px;
+
+                    .home1311 {
+                        flex: auto;
+                        box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+                        padding: 5px; /* Optional padding for spacing and aesthetics */
+                        text-align: center;
                         font-weight: 500;
-                        outline: none;
+                        color: #5d5d5b;
+                        max-width: calc(100% / 6);
+
+                    }
+
+                    .home1311:active {
+                        color: #080a0b;
+                        font-weight: 700;
+                    }
+
+                    .home1311:hover {
+                        color: #030303;
+                        font-weight: 700;
+                    }
+                }
+
+                .home132 {
+                    grid-area: home132;
+                    display: flex;
+                    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+                    justify-content: flex-end; /* Aligns items to the start of the flex container */
+                    width: 100%; /* Ensures the container takes full width of its parent */
+
+                    .home1321 {
+                        padding-top: 5px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+
+                        img {
+
+                            color: #000000;
+                            fill: #000000;
+                            font-size: 20px;
+                            width: 20px;
+                            height: 24px;
+                        }
+                    }
+
+                }
+
+                .home133 {
+                    grid-area: home133;
+                    display: flex;
+                    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+                    justify-content: flex-start; /* Aligns items to the start of the flex container */
+                    width: 100%; /* Ensures the container takes full width of its parent */
+
+                    .home1331 {
+                        button {
+                            cursor: pointer;
+                            width: 110px;
+                            padding: 0px 8px;
+                            border: none;
+                            box-sizing: border-box;
+                            border-radius: 12px;
+                            background-color: #0b83ff;
+                            color: #ffffff;
+                            font-size: 14px;
+                            font-weight: 500;
+                            outline: none;
+                        }
+
+                        button:hover {
+                            background-color: #f9a825;
+                            color: #082a5e;
+                        }
+
+                        .modal-overlay {
+                            display: none; /* Initially hidden */
+                            position: fixed;
+                            justify-content: center;
+                            align-items: center;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.5);
+                            border-radius: 12px;
+                            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+                        }
+
+                        .modal-content {
+                            background-color: #082a5e;
+                            padding: 20px;
+                            border-radius: 5px;
+                            width: 471px;
+                            height: 409px;
+                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                            position: relative;
+                            color: #f9a825;
+                            font-size: 32px;
+                            font-family: "Open Sans";
+                            font-weight: 700;
+                            line-height: 38px;
+
+                            .modal-content1 {
+                            }
+
+                            .modal-content2 {
+                            }
+
+                            .modal-content3 {
+                                display: flex;
+                                .modal-content31 {
+                                    display: flex;
+                                    .modal-content311 {
+
+                                        width: 20px;
+                                        height: 20px;
+                                        display: block;
+                                        position: relative;
+                                        opacity: 1;
+                                        pointer-events: auto;
+
+                                        .modal-content3111 {
+                                            img {
+                                                display: none;
+                                                position: absolute;
+                                                top: 50%;
+                                                left: 50%;
+                                                width: calc(100% - 8px);
+                                                height: calc(100% - 8px);
+                                                transform: translate(-50%, -50%);
+                                                transition: left 0.3s ease;
+                                                border-radius: 6px;
+                                                background-color: rgba(2, 117, 255, 1);
+                                            }
+                                        }
+                                        .modal-content3112{
+                                            input{
+                                                position: absolute;
+                                                opacity: 0;
+                                                visibility: hidden;
+                                                width: 1px;
+                                                height: 1px;
+                                                pointer-events: none;
+                                            }
+                                        }
+                                    }
+                                    .modal-content312 {}
+                                }
+                            }
+
+
+                        }
+
+                        .close {
+                            position: absolute;
+                            right: 10px;
+                            top: 10px;
+                            font-size: 28px;
+                            cursor: pointer;
+                        }
+
+                        .close:hover {
+                            color: red;
+                        }
                     }
                 }
             }
         }
-    }
 
-    .home2 {
+        .home2 {
 
-        grid-area: home2;
-        background-color: #d9ecff;
-        border-radius: 12px;
-        text-align: center;
-        padding: 20px 30px;
-        margin-left: 20px;
-        margin-right: 20px;
-        display: grid;
-        grid-template-areas:
+            grid-area: home2;
+            background-color: #d9ecff;
+            border-radius: 12px;
+            text-align: center;
+            padding: 20px 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            display: grid;
+            grid-template-areas:
                 "home21"
                 "home22"
                 "home23"
                 "home24";
-        grid-template-rows: auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
 
-        .home21 {
-            grid-area: home21;
-            display: grid;
-            grid-template-areas:
+            .home21 {
+                grid-area: home21;
+                display: grid;
+                grid-template-areas:
                     "home211 home212";
-            grid-template-columns: 1.5fr 1fr;
+                grid-template-columns: 1.5fr 1fr;
 
-            .home211 {
-                grid-area: home211;
-                margin-top: auto;
-                margin-bottom: auto;
-
-                .home2110 {
-                    min-height: 250px;
-                    margin-right: 10%;
+                .home211 {
+                    grid-area: home211;
                     margin-top: auto;
                     margin-bottom: auto;
 
-                    .home2111 {
+                    .home2110 {
+                        min-height: 250px;
+                        margin-right: 10%;
+                        margin-top: auto;
+                        margin-bottom: auto;
+
+                        .home2111 {
+                            text-align: left;
+                            color: #2b2c2b;
+                            font-size: 48px;
+
+                            font-weight: 800;
+                            line-height: 62px;
+                        }
+
+                        .home2112 {
+                            text-align: left;
+                            color: #2b2c2b;
+                            font-size: 18px;
+
+                        }
+                    }
+
+                    .home2113 {
+                        margin-right: 10%;
                         text-align: left;
-                        color: #2b2c2b;
-                        font-size: 48px;
-                        font-family: "Poppins";
-                        font-weight: 800;
-                        line-height: 62px;
-                    }
 
-                    .home2112 {
-                        text-align: left;
-                        color: #2b2c2b;
-                        font-size: 18px;
-                        font-family: "Poppins";
-                    }
-                }
+                        button {
+                            cursor: pointer;
+                            width: 274px;
+                            padding: 0px 8px;
+                            border: 0;
+                            box-sizing: border-box;
+                            border-radius: 12px;
+                            background-color: #0b83ff;
+                            color: #ffffff;
+                            font-size: 18px;
 
-                .home2113 {
-                    margin-right: 10%;
-                    text-align: left;
+                            font-weight: 500;
+                            outline: none;
+                        }
 
-                    button {
-                        cursor: pointer;
-                        width: 274px;
-                        padding: 0px 8px;
-                        border: 0;
-                        box-sizing: border-box;
-                        border-radius: 12px;
-                        background-color: #0b83ff;
-                        color: #ffffff;
-                        font-size: 18px;
-                        font-family: "Poppins";
-                        font-weight: 500;
-                        outline: none;
-                    }
-                }
-            }
-
-            .home212 {
-                grid-area: home212;
-                margin-top: auto;
-                margin-bottom: auto;
-
-                .home2121 {
-                    img {
-                        width: 412px;
-                        height: 412px;
-                        border-radius: 12px;
-                        background-position: center center;
-                        background-size: cover;
-                        background-repeat: no-repeat;
+                        button:hover {
+                            background-color: #f9a825;
+                            color: #082a5e;
+                        }
                     }
                 }
 
-                .home2122 {
-                    color: #000000;
-                    font-size: 16px;
-                    text-align: right;
-                }
-            }
+                .home212 {
+                    grid-area: home212;
+                    margin-top: auto;
+                    margin-bottom: auto;
 
-        }
-
-        .home22 {
-            grid-area: home22;
-
-            .home221 {
-                text-align: left;
-                color: #2b2c2b;
-                font-size: 24px;
-                font-weight: 800;
-
-            }
-
-            .home222 {
-                display: grid;
-                grid-template-columns: repeat(5, auto);
-                gap: 5%;
-
-                .home2221 {
-                    .home22211 {
-                        margin-top:20px;
-                        width: 100%;
-
+                    .home2121 {
                         img {
-                            width: 100%;
-                            height: 100%;
-                            width: 150px;
-                            height: 150px;
+                            width: 412px;
+                            height: 412px;
                             border-radius: 12px;
                             background-position: center center;
                             background-size: cover;
                             background-repeat: no-repeat;
                         }
-
                     }
-                }
-            }
 
-        }
-
-        .home23 {
-            grid-area: home23;
-
-            .home231 {
-                color: #2b2c2b;
-                font-size: 28px;
-                font-family: "Poppins";
-                font-weight: 800;
-                line-height: 36px;
-                text-align: center;
-                margin-bottom: 2%;
-            }
-
-            .home232 {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                gap: 2%;
-
-                .home2321 {
-                    button {
-                        cursor: pointer;
-                        width: 88px;
-                        padding: 0px 8px;
-                        margin-top: 10px;
-                        border: 0;
-                        box-sizing: border-box;
-                        border-radius: 12px;
-                        background-color: #0b83ff;
-                        color: #ffffff;
+                    .home2122 {
+                        color: #000000;
                         font-size: 16px;
-                        line-height: 20px;
-                        outline: none;
+                        text-align: right;
                     }
                 }
 
-                .home2321:nth-child(1) {
-                    width: 100%;
-                    justify-content: center;
-                }
-
-                .home2321:nth-child(2) {
-                    width: calc(100% - 40px); /* Adjusts the width to accommodate margin */
-                    justify-content: space-between; /* Ensures the buttons are spread out */
-                    margin-left: 20px;
-                    margin-right: 20px;
-                }
-
-            }
-        }
-
-        .home24 {
-            grid-area: home24;
-            margin-bottom: 5%;
-            .home241 {
-                color: #2b2c2b;
-                font-size: 28px;
-                font-weight: 800;
-                line-height: 36px;
-                text-align: center;
-                margin-bottom: 2%;
             }
 
-            .home242 {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                gap: 2%;
+            .home22 {
+                grid-area: home22;
 
-                .home2421 {
-                    display: flex;
-                    flex-direction: column;
-                    width: 30%;
-                    /*height: 384px;*/
-                    background-color: #082a5e;
-                    color: #f9a825;
-                    padding: 20px;
-                    border-radius: 10px;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                .home221 {
                     text-align: left;
+                    color: #2b2c2b;
+                    font-size: 24px;
+                    font-weight: 800;
 
-                    .home24211 {
-                        margin-top: 5%;
-                        color: #f9a825;
-                        font-size: 20px;
-                        font-family: "Poppins";
-                        font-weight: 500;
-                        line-height: 26px;
-                    }
+                }
 
-                    .home24212 {
-                        color: #f9a825;
-                        font-size: 32px;
-                        font-family: "Poppins";
-                        font-weight: 700;
-                        line-height: 42px;
-                        margin-bottom: 2%;
-                    }
+                .home222 {
+                    display: grid;
+                    grid-template-columns: repeat(5, auto);
+                    gap: 5%;
 
-                    .home24213 {
-                        display: flex;
-                        margin-top:20px;
-                        .home242131 , .home242132{
+                    .home2221 {
+                        .home22211 {
+                            margin-top: 20px;
+                            width: 100%;
 
-                            button {
-                                margin-right: 10px;
-                                cursor: pointer;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                width: 20px;
-                                height: 20px;
-                                border: 0;
-                                box-sizing: border-box;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                width: 150px;
+                                height: 150px;
                                 border-radius: 12px;
-                                color: #030303;
-                                background-color: #ffffff;
-                                outline: none;
+                                background-position: center center;
+                                background-size: cover;
+                                background-repeat: no-repeat;
                             }
-                        }
 
-
-                    }
-
-                    .home24214 {
-                        margin-top:20%;
-                        button {
-                            background-color: white;
-                            color: #1f77d2;
-                            border: none;
-                            padding: 10px 20px;
-                            text-transform: uppercase;
-                            font-weight: bold;
-                            border-radius: 5px;
-                            width: 100%;
-                            cursor: pointer;
-                            transition: background-color 0.3s;
-                        }
-
-                        button:hover {
-                            background-color: #f9a825;
-                            color: #082a5e;
                         }
                     }
-                    .home24215{
-                        margin-top:20%;
+                }
+
+            }
+
+            .home23 {
+                grid-area: home23;
+
+                .home231 {
+                    color: #2b2c2b;
+                    font-size: 28px;
+
+                    font-weight: 800;
+                    line-height: 36px;
+                    text-align: center;
+                    margin-bottom: 2%;
+                }
+
+                .home232 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2%;
+
+                    .home2321 {
                         button {
-                            border: none;
-                            padding: 10px 20px;
-                            text-transform: uppercase;
-                            width: 100%;
                             cursor: pointer;
-                            transition: background-color 0.3s;
+                            width: 88px;
+                            padding: 0px 8px;
+                            margin-top: 10px;
                             border: 0;
                             box-sizing: border-box;
                             border-radius: 12px;
-
+                            background-color: #0b83ff;
+                            color: #ffffff;
                             font-size: 16px;
-                            font-family: "Poppins";
-                            font-weight: 500;
-                            line-height: 22px;
+                            line-height: 20px;
                             outline: none;
-                            background-color: white;
-                            color: #1f77d2;
                         }
 
                         button:hover {
                             background-color: #f9a825;
                             color: #082a5e;
                         }
-
                     }
+
+                    .home2321:nth-child(1) {
+                        width: 100%;
+                        justify-content: center;
+                    }
+
+                    .home2321:nth-child(2) {
+                        width: calc(100% - 40px); /* Adjusts the width to accommodate margin */
+                        justify-content: space-between; /* Ensures the buttons are spread out */
+                        margin-left: 20px;
+                        margin-right: 20px;
+                    }
+
+                }
+            }
+
+            .home24 {
+                grid-area: home24;
+                margin-bottom: 5%;
+
+                .home241 {
+                    color: #2b2c2b;
+                    font-size: 28px;
+                    font-weight: 800;
+                    line-height: 36px;
+                    text-align: center;
+                    margin-bottom: 2%;
+                }
+
+                .home242 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2%;
+
+                    .home2421 {
+                        display: flex;
+                        flex-direction: column;
+                        width: 30%;
+                        /*height: 384px;*/
+                        background-color: #082a5e;
+                        color: #f9a825;
+                        padding: 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        text-align: left;
+
+                        .home24211 {
+                            margin-top: 5%;
+                            color: #f9a825;
+                            font-size: 20px;
+
+                            font-weight: 500;
+                            line-height: 26px;
+                        }
+
+                        .home24212 {
+                            color: #f9a825;
+                            font-size: 32px;
+
+                            font-weight: 700;
+                            line-height: 42px;
+                            margin-bottom: 2%;
+                        }
+
+                        .home24213 {
+                            display: flex;
+                            margin-top: 20px;
+
+                            .home242131, .home242132 {
+
+                                button {
+                                    margin-right: 10px;
+                                    cursor: pointer;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 20px;
+                                    height: 20px;
+                                    border: 0;
+                                    box-sizing: border-box;
+                                    border-radius: 12px;
+                                    color: #030303;
+                                    background-color: #ffffff;
+                                    outline: none;
+                                }
+                            }
+
+
+                        }
+
+                        .home24214 {
+                            margin-top: 20%;
+
+                            button {
+                                background-color: white;
+                                color: #1f77d2;
+                                border: none;
+                                padding: 10px 20px;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                border-radius: 5px;
+                                width: 100%;
+                                cursor: pointer;
+                                transition: background-color 0.3s;
+                            }
+
+                            button:hover {
+                                background-color: #f9a825;
+                                color: #082a5e;
+                            }
+                        }
+
+                        .home24215 {
+                            margin-top: 20%;
+
+                            button {
+                                border: none;
+                                padding: 10px 20px;
+                                text-transform: uppercase;
+                                width: 100%;
+                                cursor: pointer;
+                                transition: background-color 0.3s;
+                                border: 0;
+                                box-sizing: border-box;
+                                border-radius: 12px;
+
+                                font-size: 16px;
+
+                                font-weight: 500;
+                                line-height: 22px;
+                                outline: none;
+                                background-color: white;
+                                color: #1f77d2;
+                            }
+
+                            button:hover {
+                                background-color: #f9a825;
+                                color: #082a5e;
+                            }
+
+                        }
+                    }
+
                 }
 
             }
-
         }
-    }
 
-    .home3 {
-        grid-area: home3;
-        color: black;
-        text-align: center;
-        padding: 20px 30px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        .home31{
-            display: flex;
-            flex-direction: row;
-            text-align: left;
-            .home311{
-              display: flex;
-                flex-direction: column;
+        .home3 {
+            grid-area: home3;
+            box-shadow: 2px 2px 4px rgba(3, 3, 3, 0.1);
 
-            }
-            .home312{
-                color: #2b2c2b;
-                font-size: 16px;
-                font-family: "Poppins";
-                font-weight: 700;
-                line-height: 24px;
-            }
-            .home313{
+            .home30 {
+                color: black;
+                text-align: center;
+                padding: 20px 30px;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 10px;
                 display: flex;
-                .home3131{
-                    img{
+                flex: 1 1 auto;
+                justify-content: space-between;
+                align-items: flex-start;
+                height: 235px;
+                background-color: #ffffff;
+
+                .home31 {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    width: 100%;
+                    max-height: 200px;
+                    overflow-y: hidden;
+
+                    .home311 {
+                        display: flex;
+                        flex-direction: column;
+
                         color: #2b2c2b;
-                        fill: #2b2c2b;
-                        font-size: 32px;
-                        width: 32px;
-                        height: 32px;
+                        font-size: 20px;
+                        font-weight: 800;
+                        line-height: 26px;
+
+
+                    }
+
+                    .home312 {
+                        margin-top: 10%;
+                        color: #2b2c2b;
+                        font-size: 16px;
+
+                        font-weight: 700;
+                        line-height: 24px;
+                    }
+
+                    .home313 {
+                        display: flex;
+
+                        .home3131 {
+                            img {
+                                color: #2b2c2b;
+                                fill: #2b2c2b;
+                                font-size: 32px;
+                                width: 32px;
+                                height: 32px;
+                            }
+                        }
+
                     }
                 }
 
+                .home32 {
+                    display: flex;
+                    flex: 1 1 auto;
+                    flex-direction: row;
+                    flex-wrap: wrap; /* This allows the items to wrap to the next line */
+                    text-align: right;
+                    justify-content: flex-end; /* Aligns items to the start of the flex container */
+                    gap: 20px; /* Optional: adds space between columns */
+                    width: 100%;
+
+                    .home321 {
+                        display: flex;
+                        flex-direction: column;
+                        max-height: 200px;
+                        overflow-y: hidden;
+                        flex-basis: calc(25% - 20px); /* Adjusts to 4 columns */
+                        max-width: calc(25% - 20px);
+                        gap: 10px;
+                        text-align: left;
+
+                        .home3211 {
+                            color: #2b2c2b;
+                            font-size: 16px;
+
+                            font-weight: 700;
+                            line-height: 24px;
+                        }
+
+                        .home3212 {
+                            color: #2b2c2b;
+                            font-size: 16px;
+
+                            line-height: 32px;
+
+                        }
+                    }
+                }
             }
+
+
         }
+
+
     }
 
 

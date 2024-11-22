@@ -10,40 +10,91 @@
     <div class="home1">
         <div class="home11">
             <div class="home111">
-                <img src=".image/homeLogo.png">
+                <img src=".\image\homeIcon4.png">
                 </img>
             </div>
-            <div class="home112">Title</div>
+            <div class="home112">Đồ án nhóm 6</div>
         </div>
         <div class="home12">
-            <div>   <input type="text" placeholder="Search.."></div>
+            <div><input type="text" placeholder="Search.."></div>
 
         </div>
         <div class="home13">
             <div class="home131">
-                <div class="home1311">MenuItem1</div>
-                <div class="home1311">MenuItem2</div>
-                <div class="home1311">MenuItem3</div>
-                <div class="home1311">MenuItem4</div>
+                <div class="home1311">Item1</div>
+                <div class="home1311">Item2</div>
+                <div class="home1311">Item3</div>
+                <div class="home1311">Item4</div>
             </div>
             <div class="home132">
                 <div class="home1321">
-                    <img src=".image/homeIcon1.png"></img>
+                    <img src=".\image\homeIcon1.png"></img>
                 </div>
                 <div class="home1321">
-                    <img src=".image/homeIcon2.png"></img>
+                    <img src=".\image\homeIcon2.png"></img>
                 </div>
                 <div class="home1321">
-                    <img src=".image/homeIcon3.png"></img>
+                    <img src=".\image\homeIcon3.png"></img>
                 </div>
             </div>
             <div class="home133">
                 <div class="home1331">
-                    <button>Button</button>
+                    <button onclick="showModal('registerModalContent')">Đăng ký</button>
+                    <div class="modal-overlay" id="registerModalContent">
+                        <div class="modal-content">
+                            <div>
+                                <span onclick="hideModal('registerModalContent')" class="close">&times;</span>
+                            </div>
+                            <div class="modal-content1">
+                                <div><img src=".\image\homeLogo.png" alt=""></div>
+                                <div>Đăng Ký</div>
+                            </div>
+                            <div class="modal-content2">
+                                <input type="text">
+                            </div>
+                            <div class="modal-content2">
+                                <input type="text">
+                            </div>
+                            <div class="modal-content2">
+                                <input type="text">
+                            </div>
+                            <div class="modal-content2">
+                                <input type="text">
+                            </div>
+                            <div class="modal-content3">
+                                <div class="modal-content31" >
+                                    <div class="modal-content311" >
+                                        <input type="radio" >
+
+                                    </div>
+                                    <div class="modal-content312">Sinh viên</div>
+                                </div>
+                                <div class="modal-content31">
+                                    <div class="modal-content311" >
+                                        <input type="radio" >
+
+                                    </div>
+                                    <div class="modal-content312">Khác</div>
+                                </div>
+
+                            </div>
+                            <div class="modal-content4">
+                                <button>Đăng ký</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="home1331">
-                    <button>Button</button>
+                    <button onclick="showModal('loginModalContent')">Đăng nhập</button>
+                    <div class="modal-overlay" id="loginModalContent">
+                        <div class="modal-content">
+                            <span onclick="hideModal('loginModalContent')" class="close">&times;</span>
+                            <h2>Login</h2>
+                            <p>Login form content here...</p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -205,35 +256,51 @@
         </div>
     </div>
     <div class="home3">
-        <div class="home31">
-            <div class="home311">Đồ án nhóm 6</div>
-            <div class="home312">Connect with us</div>
-            <div class="home313">
-                <div class="home3131"><img src=".\image\homeLinkendi.png"></img></div>
-                <div class="home3131"><img src=".\image\homeFacebook.png"></img></div>
-                <div class="home3131"><img src=".\image\homeYoutube.png"></img></div>
+        <div class="home30">
+            <div class="home31">
+                <div class="home311">Đồ án nhóm 6</div>
+                <div class="home312">Connect with us</div>
+                <div class="home313">
+                    <div class="home3131"><img src=".\image\homeLinkendi.png"></img></div>
+                    <div class="home3131"><img src=".\image\homeFacebook.png"></img></div>
+                    <div class="home3131"><img src=".\image\homeYoutube.png"></img></div>
 
+                </div>
+            </div>
+            <div class="home32">
+                <div class="home321">
+                    <div class="home3211">Title1</div>
+                    <div class="home3212">Subtile1</div>
+                </div>
+                <div class="home321">
+                    <div class="home3211">Title2</div>
+                    <div class="home3212">Subtile1</div>
+                    <div class="home3212">Subtile2</div>
+                    <div class="home3212">Subtile3</div>
+                </div>
+                <div class="home321">
+                    <div class="home3211">Title3</div>
+                    <div class="home3212">Subtile1</div>
+                    <div class="home3212">Subtile2</div>
+                </div>
             </div>
         </div>
-        <div class="home32">
-            <div class="home321">
-                <div class="home3211">Title1</div>
-                <div class="home3212">Subtile1</div>
-            </div>
-            <div class="home321">
-                <div class="home3211">Title2</div>
-                <div class="home3212">Subtile1</div>
-                <div class="home3212">Subtile2</div>
-                <div class="home3212">Subtile3</div>
-            </div>
-            <div class="home321">
-                <div class="home3211">Title3</div>
-                <div class="home3212">Subtile1</div>
-                <div class="home3212">Subtile2</div>
-            </div>
-        </div>
+
     </div>
 </div>
 
+
+<script>
+    function showModal(modalId) {
+        document.getElementById(modalId).style.display = 'flex';
+    }
+
+    function hideModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+    }
+
+
+
+</script>
 </body>
 </html>
