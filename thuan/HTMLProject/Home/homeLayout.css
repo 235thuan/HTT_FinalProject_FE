@@ -33,13 +33,14 @@
         display: grid;
         grid-template-areas:
         "home11 home12 home13";
-        grid-template-columns: 0.2fr 0.5fr auto;
+        grid-template-columns: 0.2fr 0.7fr auto;
         gap: 10px;
 
         .home11 {
             grid-area: home11;
             display: grid;
             grid-template-areas: "logo title";
+            align-items: center;
 
             .home111 {
                 grid-area: logo;
@@ -63,9 +64,13 @@
 
         .home12 {
             grid-area: home12;
-
-            input {
-                width: 345px;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap onto the next line */
+            justify-content: flex-start; /* Aligns items to the start of the flex container */
+            width: 100%; /* Ensures the container takes full width of its parent */
+            div input {
+                width: 100%;
                 padding: 0px 8px;
                 border: 1px solid #cbcbd0;
                 box-sizing: border-box;
@@ -87,14 +92,21 @@
             grid-template-areas:"home131 home132 home133";
             grid-template-columns: auto auto auto;
             gap: 10px;
+            align-items: center;
 
             .home131 {
                 grid-area: home131;
-                display: grid;
-                grid-template-areas:"home1311 home1312 home1313 home1314";
-                grid-template-columns: auto auto auto;
+                display: flex;
+                flex-wrap: wrap; /* Allows items to wrap onto the next line */
+                justify-content: flex-start; /* Aligns items to the start of the flex container */
+                width: 100%; /* Ensures the container takes full width of its parent */
+
 
                 .home1311 {
+                    flex: 1 1 25%; /* Each item can grow and shrink but starts with a basis of one-third of the container's width */
+                    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+                    padding: 5px; /* Optional padding for spacing and aesthetics */
+                    text-align: center;
                     font-weight: 500;
                     color: #5d5d5b;
                 }
@@ -107,17 +119,19 @@
 
             .home132 {
                 grid-area: home132;
-                display: grid;
-                grid-template-areas:"home1321 home1322 home1323";
-                grid-template-columns: auto auto auto;
+                display: flex;
+                flex-wrap: wrap; /* Allows items to wrap onto the next line */
+                justify-content: flex-start; /* Aligns items to the start of the flex container */
+                width: 100%; /* Ensures the container takes full width of its parent */
 
             }
 
             .home133 {
                 grid-area: home133;
-                display: grid;
-                grid-template-areas:"home1331 home1332";
-                grid-template-columns: auto auto;
+                display: flex;
+                flex-wrap: wrap; /* Allows items to wrap onto the next line */
+                justify-content: flex-start; /* Aligns items to the start of the flex container */
+                width: 100%; /* Ensures the container takes full width of its parent */
 
                 .home1331 {
                     button {
@@ -255,6 +269,7 @@
 
                 .home2221 {
                     .home22211 {
+                        margin-top:20px;
                         width: 100%;
 
                         img {
