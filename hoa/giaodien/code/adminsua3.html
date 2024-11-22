@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <link rel="stylesheet" href="adminsua3.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header1">
+                <img src="/image/admin.png" alt="" />
+                <h1>Admin</h1>
+                <p></p>
+            </div>
+            <div class="header2">
+                <img src="/image/caidat.png" alt="" />
+                <img src="/image/thongbao.png" alt="" />
+                <img src="/image/nguoidung.png" alt="" />
+                <h1></h1>
+                <p></p>
+            </div>
+            
+        </header>
+
+        <nav >
+            <ul>
+            <div class="Qlnv">
+                <button>
+                    <img src="/image/nhanvien.png" height="20px" width="20px" />
+                </button>
+                <h2><i>Quản Lý Nhân Viên</i></h2>
+            </div>
+            <div class="Qlsv">
+                <button>
+                    <img src="/image/sinhvien.png" height="20px" width="20px" />
+                </button>
+                <h2><i>Quản Lý Sinh Viên</i></h2>
+            </div>
+            <div class="Qlkh">
+                <button>
+                    <img src="/image/Icon graduation cap.png" height="20px" width="20px" />
+                </button>
+                <h2><i>Khóa Học</i></h2>
+            </div>
+            <div class="Qlmh">
+                <button>
+                    <img src="/image/monhoc.png" height="20px" width="20px" />
+                </button>
+                <h2><i>Môn Học</i></h2>
+            </div>
+            <div class="Qlhd">
+                <button>
+                    <img src="/image/hoadon.png" height="20px" width="20px" />
+                </button>
+                <h2><i>Hóa Đơn</i></h2>
+            </div>
+            <div class="Qld">
+                <button>
+                    <img src="/image/Icon graduation cap.png" height="20px" width="20px" />
+                </button>
+                <h2><i>Điểm</i></h2>
+            </div>
+            <div class="Qlvt">
+                <button>
+                    <img src="/image/vaitro.png" height="20px" width="20px" />
+                </button>
+                <h2><i>Vai Trò</i></h2>
+            </div>
+        </ul>
+        </nav>
+
+        <main class="content">
+            <header class="header">
+                <h1>Thêm Người Dùng</h1>
+            </header>
+            <form class="user-form">
+                <div class="form-section1">
+                    <label>User type selection</label>
+                    <div class="user-type-options">
+                        <div>
+                            <input type="radio" name="userType" id="staff" value="Staff">
+                            <label for="staff">Staff</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="userType" id="student" value="Student">
+                            <label for="student">Sinh Viên</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="userType" id="admin" value="Admin">
+                            <label for="admin">Admin</label>
+                        </div>
+                    </div>
+                </div>
+                
+            <div class="textview">
+                <div class="textview1">
+                <div class="form-section">
+                    <label for="fullName">Tên Đầy Đủ</label>
+                    <input type="text" id="fullName" name="fullName">
+                </div>
+
+                <div class="form-section">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-section">
+                    <label for="role">Vai Trò</label>
+                    <input type="text" id="role" name="role">
+                </div>
+
+                <div class="form-section">
+                    <label for="employeeId">Mã</label>
+                    <input type="text" id="employeeId" name="employeeId">
+                </div>
+
+                <div class="form-section">
+                    <label for="password">Mật Khẩu</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div class="form-section">
+                    <label for="accessLevel">Access level</label>
+                    <input type="text" id="accessLevel" name="accessLevel">
+                </div>
+
+                
+            </div>
+            <div class="textview2">
+                <div class="form-section">
+                    <label for="role">Status</label>
+                    <input type="text" id="role" name="role">
+                </div>
+                <div class="form-section">
+                    <label for="role">Phòng/lớp</label>
+                    <input type="text" id="role" name="role">
+                </div>
+                <div class="form-section">
+                    <label for="role">Ảnh</label>
+                    <input type="text" id="role" name="role">
+                </div>
+                <div class="form-section">
+                    <label for="role">Mô Tả</label>
+                    <input type="text" id="role" name="role">
+                </div>
+                <div class="form-section">
+                    <label for="role">Chuyên Ngành/Chuyên Môn</label>
+                    <input type="text" id="role" name="role">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="save-btn">Save user</button>
+                    <button type="button" class="cancel-btn">Cancel</button>
+                </div>
+            </div>
+            </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

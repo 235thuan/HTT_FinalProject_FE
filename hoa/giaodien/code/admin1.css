@@ -1,0 +1,733 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+    .container {
+        display: grid;
+        grid-template-areas:
+                "header header header"
+                "nav content sidebar"
+                "footer footer footer";
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        gap: 20px;
+        width: 180vb;
+        margin: 20px auto;
+        padding: 20px;
+        height: 100vb;
+
+        header {
+            grid-area: header;
+            background-color: #ffffff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+        }
+        .header1 {
+            grid-area: header1;
+            background-color: #ffffff;
+            height: 50%;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            padding: 1px;
+            cursor: pointer;
+        }
+        h1{
+            color: rgb(4, 26, 99)
+
+        }
+        .header1 img {
+            width: 30px;
+            height: 20px;
+            display: block;
+        }
+        .header2 {
+            grid-area: header1;
+            background-color: #ffffff;
+            height: 50%;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            padding: 1px;
+            cursor: pointer;
+        }
+        .header2 img {
+            width: 30px;
+            height: 20px;
+            margin: 0 auto;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 10px;
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .nav img {
+            width: 20px;
+            height: 20px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 0.45cm; /* Kích thước chữ */
+            letter-spacing: 0.1px; /* Khoảng cách giữa các chữ */
+        }
+        .Qlnv {
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+        }
+        .Qlsv {
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+        }
+
+        .Qlkh {
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+        }
+        .Qlmh {
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+        }
+        .Qlhd {
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+        }
+        .Qld {
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+        }
+
+        .Qlvt {
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            flex-direction: column;
+            position: relative;
+            width: 100%; /* Ensure the sidebar takes full width */
+
+            .dropdown-trigger {
+                background: none;
+                border: none;
+                text-align: left;
+                cursor: pointer;
+                display: flex;
+                h2 i{
+                    display: flex;
+                }
+            }
+
+            .toggle-checkbox {
+                display: none; /* Hide the checkbox */
+            }
+
+            .dropdown-content {
+                display: none;
+                width: calc(100% - 20px); /* Subtract some width to adjust for margin */
+                margin-left: 20px; /* Indent the dropdown content */
+                list-style: none;
+                padding: 0;
+            }
+
+            .toggle-checkbox:checked + .dropdown-content {
+                display: flex;
+                flex-direction: column;
+            }
+            .dropdown-content li a {
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                color: black;
+            }
+            .dropdown-content li a:hover {
+                background-color: #f1f1f1;
+            }
+        }
+
+
+
+        .content {
+            grid-area: content;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 135%;
+            padding: 3%;
+        }
+        .content1{
+            grid-area: content1;
+            background-color: #f4f4f4;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            height: 30%;
+            padding: 3%;
+        }
+        .content11{
+            grid-area: content11;
+            background-color: #8ed7ea;
+            height: 100%;
+            width: 30%;
+            border-radius: 15px;
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            position: relative;
+            padding: 14px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 0.55cm; /* Kích thước chữ */
+            letter-spacing: 0.1px; /* Khoảng cách giữa các chữ */
+        }
+        h3 {
+            font-size: 0.3cm; /* Kích thước chữ */
+            letter-spacing: 0.1px; /* Khoảng cách giữa các chữ */
+        }
+        
+        .content111{
+            grid-area: content111;
+            background-color: #8ed7ea;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            margin: 1px;
+            justify-content: flex-start;
+        }
+        .content112{
+            grid-area: content112;
+            background-color: #8ed7ea;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content113{
+            grid-area: content113;
+            background-color: #8ed7ea;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content1111{
+            grid-area: content1111;
+            background-color: #02ccff;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content1112{
+            grid-area: content1112;
+            background-color: #02ccff;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content1122{
+            grid-area: content1122;
+            background-color: #02ccff;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content1121{
+            grid-area: content1121;
+            background-color: #02ccff;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content12{
+            grid-area: content11;
+            background-color: #828a8b;
+            height: 100%;
+            width: 30%;
+            border-radius: 15px;
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            position: relative;
+            padding: 14px;
+        }
+        
+        .content121{
+            grid-area: content111;
+            background-color: #828a8b;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            margin: 1px;
+            justify-content: flex-start;
+        }
+        .content122{
+            grid-area: content112;
+            background-color: #828a8b;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content123{
+            grid-area: content113;
+            background-color: #828a8b;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content1211{
+            grid-area: content1111;
+            background-color: #02ccff;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content1212{
+            grid-area: content1112;
+            background-color: #02ccff;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content1222{
+            grid-area: content1122;
+            background-color: #02ccff;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content1221{
+            grid-area: content1121;
+            background-color: #02ccff;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content13{
+            grid-area: content11;
+            background-color: #1ecffc;
+            height: 100%;
+            width: 30%;
+            border-radius: 15px;
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            position: relative;
+            padding: 14px;
+        }
+        
+        .content131{
+            grid-area: content111;
+            background-color: #1ecffc;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            margin: 1px;
+            justify-content: flex-start;
+        }
+        .content132{
+            grid-area: content112;
+            background-color: #1ecffc;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content133{
+            grid-area: content113;
+            background-color: #1ecffc;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content1311{
+            grid-area: content1111;
+            background-color: #2c2929;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content1312{
+            grid-area: content1112;
+            background-color: #2c2929;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content1322{
+            grid-area: content1122;
+            background-color: #2c2929;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content1321{
+            grid-area: content1121;
+            background-color: #2c2929;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content2{
+            grid-area: content2;
+            background-color: #f4f4f4;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            height: 30%;
+            padding: 3%;
+        }
+        .content21{
+            grid-area: content11;
+            background-color: #828a8b;
+            height: 100%;
+            width: 30%;
+            border-radius: 15px;
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            position: relative;
+            padding: 14px;
+        }
+        
+        .content211{
+            grid-area: content111;
+            background-color: #828a8b;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            margin: 1px;
+            justify-content: flex-start;
+        }
+        .content212{
+            grid-area: content112;
+            background-color: #828a8b;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content213{
+            grid-area: content113;
+            background-color: #828a8b;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content2111{
+            grid-area: content1111;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content2112{
+            grid-area: content1112;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content2122{
+            grid-area: content1122;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content2121{
+            grid-area: content1121;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content22{
+            grid-area: content11;
+            background-color: #8ed7ea;
+            height: 100%;
+            width: 30%;
+            border-radius: 15px;
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            position: relative;
+            padding: 14px;
+        }
+        
+        .content221{
+            grid-area: content111;
+            background-color: #8ed7ea;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            margin: 1px;
+            justify-content: flex-start;
+        }
+        .content222{
+            grid-area: content112;
+            background-color: #8ed7ea;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content223{
+            grid-area: content113;
+            background-color: #8ed7ea;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content2211{
+            grid-area: content1111;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content2212{
+            grid-area: content1112;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content2222{
+            grid-area: content1122;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content2221{
+            grid-area: content1121;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content23{
+            grid-area: content11;
+            background-color: #828a8b;
+            height: 100%;
+            width: 30%;
+            border-radius: 15px;
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            position: relative;
+            padding: 14px;
+        }
+        
+        .content231{
+            grid-area: content111;
+            background-color: #828a8b;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            margin: 1px;
+            justify-content: flex-start;
+        }
+        .content232{
+            grid-area: content112;
+            background-color: #828a8b;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content233{
+            grid-area: content113;
+            background-color: #828a8b;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content2311{
+            grid-area: content1111;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content2312{
+            grid-area: content1112;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content2322{
+            grid-area: content1122;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content2321{
+            grid-area: content1121;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+    
+        .content3{
+            grid-area: content1;
+            background-color: #f4f4f4;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            height: 30%;
+            padding: 3%;
+        }
+        .content31{
+            grid-area: content11;
+            background-color: #1ecffc;
+            height: 100%;
+            width: 30%;
+            border-radius: 15px;
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            position: relative;
+            padding: 14px;
+        }
+        
+        .content311{
+            grid-area: content111;
+            background-color: #1ecffc;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            margin: 1px;
+            justify-content: flex-start;
+        }
+        .content312{
+            grid-area: content112;
+            background-color: #1ecffc;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content313{
+            grid-area: content113;
+            background-color: #1ecffc;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+            justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .content3111{
+            grid-area: content1111;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content3112{
+            grid-area: content1112;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content3122{
+            grid-area: content1122;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+        .content3121{
+            grid-area: content1121;
+            background-color: #f89797;
+            border-radius: 25px;
+            height: auto;
+            width: auto;
+        }
+    }
+}
+
+
+/* Responsive cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+                    "header"
+                    "nav"
+                    "content"
+                    "sidebar"
+                    "footer";
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+}
