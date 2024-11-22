@@ -1,11 +1,23 @@
 # SoftwareEngineer
-  [![Matrix SVG](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](https://www.youtube.com/watch?v=SDkAGkd4NLc) 
+
+[![Matrix SVG](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)](https://www.youtube.com/watch?v=SDkAGkd4NLc)
 <h2> Hi, I'm Thuan! <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></h2>
-<img align='right' src="https://i.pinimg.com/originals/b0/7c/0f/b07c0fc116d1868db07a8bbc2d79aab9.gif" width="230">
+
 <p><em>Student at <a href="https://htt.edu.vn/">Hanoi College of Technology and Tranding</a>
+<img src="https://htt.edu.vn/wp-content/uploads/2024/01/logoooooo-e1705542743871.png" width="50"> 
+
+</em>
+</p>
+
+<div>
+<img align='right' src="https://i.pinimg.com/originals/b0/7c/0f/b07c0fc116d1868db07a8bbc2d79aab9.gif" width="150"></div>
+
 <img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30">
-<img src="https://htt.edu.vn/wp-content/uploads/2024/01/logoooooo-e1705542743871.png"> 
-</em></p>
+
+**Current Project**
+
+
+<a href="https://github.com/235thuan/HTT_FinalProject_FE.git"># Quản lý trường học FE </a>
 
 **Languages I have used**
 
@@ -32,6 +44,5 @@
 ![Java Spring](https://img.shields.io/badge/-Spring-000000?style=flat&logo=spring&logoColor=6DB33F)
 ![TCP/IP](https://img.shields.io/badge/-TCP/IP-000000?style=flat&logo=cisco&logoColor=white)
 ![XCode](https://img.shields.io/badge/-XCode-000000?style=flat&logo=XCode&logoColor=1575F9)<!-- wi*quL3fcV -->
-
 
 ⭐️ From [235thuan](https://github.com/235thuan)
