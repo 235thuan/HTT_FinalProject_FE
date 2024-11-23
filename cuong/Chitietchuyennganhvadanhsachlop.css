@@ -1,0 +1,811 @@
+/* Đặt font-family chung cho toàn bộ trang */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Box model chuẩn để tính toán kích thước chính xác */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    position: fixed; /* Chắc chắn rằng header luôn hiển thị ở trên cùng */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 84px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px rgba(3, 3, 3, 0.1);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    z-index: 10; /* Đảm bảo header không bị chồng lên các phần tử khác */
+}
+
+/* Icon và Text trong header */
+.icon-text-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.icon2 {
+    color: #030303;
+    fill: #030303;
+    font-size: 20px;
+    width: 20px;
+    height: 24px;
+}
+
+.text {
+    color: #030303;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 28px;
+    margin-left: 10px;
+}
+
+/* Input field */
+.input-field {
+    width: 100%; /* Để trường nhập liệu có thể linh hoạt trên mọi màn hình */
+    max-width: 345px; /* Giới hạn độ rộng tối đa */
+    height: 48px;
+    padding: 0px 8px;
+    border: 1px solid #cbcbd0;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.74);
+    color: #1d1d1f;
+    font-size: 14px;
+    font-weight: 500;
+    outline: none;
+    margin-left: 100px;
+}
+
+/* Text styles */
+.browse-text, .Analyt-text, .New-text, .Recent-text {
+    color: #5d5d5b;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.browse-text {
+    font-weight: 700;
+}
+
+.icon1, .icon3, .icon4 {
+    color: #000000;
+    fill: #000000;
+    font-size: 20px;
+    width: 20px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.icon1 {
+    margin-left: 39px;
+}
+
+.icon3 {
+    margin-left: 14px;
+}
+
+.icon4 {
+    margin-left: 16px;
+}
+
+/* User profile image */
+.f {
+    position: fixed; /* Đảm bảo rằng ảnh người dùng luôn hiển thị ở góc */
+    top: 22px;
+    left: 1352px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #cccccc; /* Màu nền dự phòng */
+}
+
+/* Card1 */
+.card1 {
+    position: absolute;
+    top: 102px;
+    left: 64px;
+    width: calc(100% - 128px); /* Đảm bảo card luôn rộng theo màn hình */
+    max-width: 1312px; /* Giới hạn kích thước tối đa */
+    height: 290px;
+    background-color: rgba(0, 0, 0, 0.48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Explore Text */
+.Exploreoureducationalvideolibrary-text {
+    color: #6a6a6a;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+}
+
+.Discover-text {
+    position: absolute;
+    color: #6a6a6a;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 125px;
+}
+
+/* Card2 */
+.card2 {
+    position: absolute;
+    top: 352px;
+    left: 50%;
+    transform: translateX(-50%); /* Căn giữa card theo chiều ngang */
+    width: 100%;
+    max-width: 844px; /* Giới hạn độ rộng tối đa */
+    height: 80px;
+    background-color: #d9ecff;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.historyimage1-container {
+    position: absolute;
+    top: 571px;
+    left: 450px;
+    width: 250px;
+    height: 202px;
+    border-radius: 12px;
+    background-image: url('https://images.unsplash.com/photo-1484335629320-0e089b87a106?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDUzMDJ8MHwxfHNlYXJjaHw1fHxNYXRoJTJDJTIwTnVtYmVycyUyQyUyMEVxdWF0aW9uc3xlbnwxfHx8fDE3MjkxOTkxMzJ8MA&ixlib=rb-4.0.3&q=80&w=1080');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.history-button{
+      cursor: pointer;
+      position: absolute;
+      top: 162px;
+      left: 30px;
+      width: 96px;
+      height: 32px;
+      border: 0;
+      box-sizing: border-box;
+      border-radius: 12px;
+      background-color: #ffffff;
+      color: #030303;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      line-height: 24px;
+      outline: none;
+}
+.artimage1-container {
+    position: absolute;
+    top: 571px;
+    left: 825px;
+    width: 250px;
+    height: 202px;
+    border-radius: 12px;
+    background-image: url('https://assets.api.uizard.io/api/cdn/stream/1c46998d-b8ec-4b44-822c-14df2f5d7577.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+.art-button{
+    cursor: pointer;
+    position: absolute;
+    top: 162px;
+    left: 30px;
+    width: 96px;
+    height: 32px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    outline: none;
+}
+.languagesimage1-container{
+    position: absolute;
+      top: 571px;
+      left: 1200px;
+      width: 250px;
+      height: 200px;
+      border-radius: 12px;
+      background-image: url('https://assets.api.uizard.io/api/cdn/stream/cfb4d084-9533-4dab-a75a-525d518f48f9.png');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+.langugaes-button{
+    cursor: pointer;
+    position: absolute;
+    top: 162px;
+    left: 30px;
+    width: 96px;
+    height: 32px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    outline: none;
+}
+/* Text container inside Card2 */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Category-text {
+    font-weight: bold;
+    color: #030303;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.Browsebytopic-text {
+    color: #030303;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+/* Button inside Card2 */
+.button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border: 0;
+    border-radius: 12px;
+    color: #ffffff;
+    background-color: #0b83ff;
+    outline: none;
+}
+
+.icon5 {
+    color: #ffffff;
+    fill: #ffffff;
+    width: 26px;
+    height: 26px;
+    font-size: 26px;
+}
+
+/* Card3 and Image */
+.card3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 448px;
+}
+
+
+.Cacmonhoc-text {
+    color: #030303;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 20px;
+    margin-top: 524px;
+    margin-left: 64px;
+}
+
+.mathimage1-container {
+    position: relative; /* Đặt ảnh ở vị trí relative để chứa các phần tử con tuyệt đối */
+    width: 250px; /* Giới hạn kích thước tối đa */
+    height: 200px;
+    aspect-ratio: 1.58; /* Tạo tỷ lệ chiều rộng/chiều cao */
+    border-radius: 12px;
+    background-image: url('https://images.unsplash.com/photo-1518152006812-edab29b069ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDUzMDJ8MHwxfHNlYXJjaHwyfHxFeHBlcmltZW50JTJDJTIwTGFiJTJDJTIwUmVzZWFyY2h8ZW58MXx8fHwxNzI5MjM3ODM1fDA&ixlib=rb-4.0.3&q=80&w=1080');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 64px;
+}
+
+.math-button {
+    cursor: pointer;
+    position: absolute; 
+    top: 10%; 
+    left: 3%; 
+    width: 82px;
+    height: 32px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    outline: none;
+    margin-left: 16px;
+    margin-top: 140px;
+}
+.image-container {
+      position: absolute;
+      top: 750px;
+      left: 396px;
+      width: 316px;
+      height: 136px;
+      border-radius: 12px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+.Lophoctieubieu-text {
+    color: #030303;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px;
+    margin-top: 62px;
+    margin-left: 64px;
+}
+.mathimage2-container{
+    position: absolute;
+      top: 25px;
+      left: 10px;
+      width: 233px;
+      height: 184px;
+      border-radius: 12px;
+      background-image: url('https://images.unsplash.com/photo-1578593139939-cccb1e98698c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDUzMDJ8MHwxfHNlYXJjaHwzfHxDbGFzc3Jvb218ZW58MXx8fHwxNzI5MjM3ODM1fDA&ixlib=rb-4.0.3&q=80&w=1080');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+.ninedotsix-button{
+    cursor: pointer;
+      position: absolute;
+      top: 30px;
+      left: 15px;
+      width: 42px;
+      height: 26px;
+      padding: 0px 8px;
+      border: 0;
+      box-sizing: border-box;
+      border-radius: 12px;
+      background-color: #0b83ff;
+      color: #ffffff;
+      font-size: 12px;
+      font-family: Poppins, sans-serif;
+      line-height: 16px;
+      outline: none;
+}
+.hearticon-button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    left: 215px;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 12px;
+    color: #030303;
+    background-color: #ffffff;
+    outline: none;
+  }
+.heart-icon {
+    color: #030303;
+    fill: #030303;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+  }
+.cardmath{
+    position: absolute;
+    top: 900px;
+    left: 65px;
+    width: 249px;
+    height: 294px;
+    background-color: #d9ecff;
+    border-radius: 12px;
+}
+.cardBiology{
+    position: absolute;
+    top: 900px;
+    left: 350px;
+    width: 249px;
+    height: 294px;
+    background-color: #d9ecff;
+    border-radius: 12px;
+}
+.cardArt{
+    position: absolute;
+    top: 900px;
+    left: 950px;
+    width: 249px;
+    height: 294px;
+    background-color: #d9ecff;
+    border-radius: 12px;
+}
+.Artimage3-container{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 233px;
+    height: 184px;
+    border-radius: 12px;
+    background-image: url('https://images.unsplash.com/photo-1582560475135-72433678395b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDUzMDJ8MHwxfHNlYXJjaHw0fHxMYWIlMkMlMjBNaWNyb3Njb3BlJTJDJTIwQmlvbG9neXxlbnwxfHx8fDE3MjkyMzc4MzV8MA&ixlib=rb-4.0.3&q=80&w=1080');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ArtisticExpressions-text{
+    padding-top: 208px;
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.ArtHistory-text{
+    padding-top: 3px;
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.from80-text{
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.cardLanguages{
+    position: absolute;
+    top: 900px;
+    left: 1250px;
+    width: 249px;
+    height: 294px;
+    background-color: #d9ecff;
+    border-radius: 12px;
+}
+.Languagesimage4-container{
+    position: absolute;
+      top: 25px;
+      left: 10px;
+      width: 233px;
+      height: 184px;
+      border-radius: 12px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url('https://images.unsplash.com/photo-1522878308970-972ec5eedc0d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDUzMDJ8MHwxfHNlYXJjaHwzfHxBcnQlMjBTdHVkaW8lMkMlMjBQYWludGluZ3MlMkMlMjBHYWxsZXJ5fGVufDF8fHx8MTcyOTIzNzgzNXww&ixlib=rb-4.0.3&q=80&w=1080');
+}
+.LanguageAdventures-text{
+    padding-top: 208px;
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.Spanish-text{
+    padding-top: 3px;
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.from40-text{
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.cardhistory{
+    position: absolute;
+    top: 900px;
+    left: 650px;
+    width: 249px;
+    height: 294px;
+    background-color: #d9ecff;
+    border-radius: 12px;
+}
+.Historyimage2-container{
+    position: absolute;
+      top: 25px;
+      left: 10px;
+      width: 233px;
+      height: 184px;
+      border-radius: 12px;
+      background-image: url('https://images.unsplash.com/photo-1582560475135-72433678395b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDUzMDJ8MHwxfHNlYXJjaHw0fHxMYWIlMkMlMjBNaWNyb3Njb3BlJTJDJTIwQmlvbG9neXxlbnwxfHx8fDE3MjkyMzc4MzV8MA&ixlib=rb-4.0.3&q=80&w=1080');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+.HistoryUncovered-text{
+    padding-top: 208px;
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.WorldHistory-text{
+    padding-top: 3px;
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.from60-text{
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.Biologyimage2-container{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 233px;
+    height: 184px;
+    border-radius: 12px;
+    background-image: url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDUzMDJ8MHwxfHNlYXJjaHwxfHxDbGFzc3Jvb20lMkMlMjBMZWFybmluZyUyQyUyMFN0dWR5fGVufDF8fHx8MTcyOTIzNzgzNXww&ixlib=rb-4.0.3&q=80&w=1080');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ScienceExplorations-text{
+    padding-top: 208px;
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.Biology-text{
+    padding-top: 3px;
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.from70-text{
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.MathMasteryCourse-text{
+      padding-top: 208px;
+      color: #030303;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      line-height: 24px;
+      padding-left: 12px;
+}
+.Algebra-text{
+    padding-top: 3px;
+    color: #030303;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    padding-left: 12px;
+}
+.from50-text{
+      color: #030303;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      line-height: 24px;
+      padding-left: 12px;
+}
+.muiten-icon{
+    color: #030303;
+      fill: #030303;
+      font-size: 14px;
+      position: absolute;
+      top: 265px;
+      left: 225px;
+      width: 14px;
+      height: 14px;
+}
+.Dicover-card{
+    position: absolute;
+      top: 1306px;
+      left: 64px;
+      width: 1312px;
+      height: 92px;
+      background-color: #d9ecff;
+      border-radius: 12px;
+      box-sizing: border-box;
+}
+.givemoney-icon{
+      color: #030303;
+      fill: #030303;
+      font-size: 48px;
+      position: absolute;
+      top: 25px;
+      left: 96px;
+      width: 48px;
+      height: 48px;
+}
+.Discoverexclusive-text{
+      color: #030303;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      line-height: 24px;
+      padding-left: 149px;
+      margin-top: 20px;
+}
+.Doyouwant-text{
+      color: #030303;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      line-height: 18px;
+      padding-left: 149px;
+      margin-top: 5px;
+}
+.dangkyhoc-button{
+    cursor: pointer;
+      position: absolute;
+      top: 25px;
+      left: 1000px;
+      width: 216px;
+      height: 38px;
+      padding: 0px 8px;
+      border: 1px solid #d3d3d3;
+      box-sizing: border-box;
+      border-radius: 12px;
+      background-color: #ffffff;
+      color: #030303;
+      font-size: 14px;
+      font-family: 'Poppins', sans-serif;
+      line-height: 18px;
+      outline: none;
+}
+.footer{
+      position: absolute;
+      top: 1425px;
+      left: 0px;
+      width: 100%;
+      height: 235px;
+      background-color: #ffffff;
+      box-shadow: 2px 2px 4px rgba(3, 3, 3, 0.1);
+      
+}
+.EducatorTube-text{
+      position: absolute;
+      color: #2b2c2b;
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      line-height: 26px;
+      padding-left: 56px;
+      padding-top: 33px;
+}
+.Connectwithus-text{
+    color: #2b2c2b;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      line-height: 26px;
+      padding-left: 56px;
+      padding-top: 120px;
+}
+.in-icon{
+    color: #2b2c2b;
+      fill: #2b2c2b;
+      font-size: 32px;
+      position: absolute;
+      top: 150px;
+      left: 56px;
+      width: 32px;
+      height: 32px;
+}
+.facebook-icon{
+      color: #2b2c2b;
+      fill: #2b2c2b;
+      font-size: 32px;
+      position: absolute;
+      top: 150px;
+      left: 90px;
+      width: 30px;
+      height: 30px;
+}
+.youtube-icon{
+     color: #2b2c2b;
+      fill: #2b2c2b;
+      font-size: 32px;
+      position: absolute;
+      top: 150px;
+      left: 125px;
+      width: 32px;
+      height: 32px;
+}
+.Institution-text {
+     position: absolute;
+     color: #2b2c2b;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      line-height: 26px;
+      padding-left: 780px;
+      padding-top: 33px;
+}
+.DiscussionForum-text{
+    position: absolute;
+    color: #2b2c2b;
+     font-size: 16px;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 800;
+     line-height: 26px;
+     padding-left: 990px;
+     padding-top: 33px;
+}
+.HelpCenter-text{
+    position: absolute;
+    color: #2b2c2b;
+     font-size: 16px;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 800;
+     line-height: 26px;
+     padding-left: 1250px;
+     padding-top: 33px;
+}
+.AboutUsCareers-text{
+    position: absolute;
+    color: #2b2c2b;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      line-height: 32px;
+      padding-left: 780px;
+      padding-top: 73px;
+}
+.ForEducatorsAdvertising-text{
+    position: absolute;
+    color: #2b2c2b;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      line-height: 32px;
+      padding-left: 990px;
+      padding-top: 73px;
+}
+.CustomerSupportMobile-text{
+    position: absolute;
+    color: #2b2c2b;
+     font-size: 16px;
+     font-family: 'Poppins', sans-serif;
+     line-height: 32px;
+     padding-left: 1250px;
+     padding-top: 73px;
+}
