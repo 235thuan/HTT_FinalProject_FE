@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52fa6b94-04a1-4cc2-9358-b279fb6476a4" name="Changes" comment="" />
+    <list default="true" id="52fa6b94-04a1-4cc2-9358-b279fb6476a4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/.idea/Home.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/homeLayout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/image/homeButtonIcon1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/image/homeButtonIcon2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/image/homeFacebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/image/homeIcon1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/image/homeIcon2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/image/homeIcon3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/image/homeIcon4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/image/homeIcon5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/image/homeIcon6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/image/homeImage1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/image/homeImage2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/image/homeLinkendi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/HTMLProject/Home/image/homeYoutube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/abc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuan/abc.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +44,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/thuan/HTMLProject" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -68,6 +93,7 @@
       <updated>1732240231158</updated>
       <workItem from="1732240232233" duration="5297000" />
       <workItem from="1732246089081" duration="420000" />
+      <workItem from="1732344255004" duration="10928000" />
     </task>
     <servers />
   </component>
