@@ -17,7 +17,7 @@
 **Current Project**
 
 
-<a href="https://github.com/235thuan/HTT_FinalProject_FE.git"># Quản lý trường học FE </a>
+<a href="https://github.com/235thuan/HTT_FinalProject_FE.git"># Quản lý trường học frontend</a>
 
 **Languages I have used**
 

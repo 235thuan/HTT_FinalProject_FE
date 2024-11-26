@@ -661,7 +661,8 @@
                         padding-left: 40px;
                         padding-right: 40px;
 
-                        height: 40vh;
+                        /*height: 40vh;*/
+                        height: 100%;
 
                         .home24211 {
                             margin-top: 5%;

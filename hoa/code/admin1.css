@@ -4,10 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.h130px{
+    height: 100%;
+    margin-bottom: 20px !important;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    display: flex;
+
 
     .container {
         display: grid;
@@ -44,7 +49,9 @@ body {
             cursor: pointer;
         }
 
-
+.hoaFooter{
+    grid-area: footer;
+}
 
         h1{
             color: rgb(4, 26, 99)
@@ -168,8 +175,8 @@ body {
         .content11{
             grid-area: content11;
             background-color: #8ed7ea;
-            height: 100%;
             width: 30%;
+            height: 100%;
             border-radius: 15px;
             justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
             position: relative;

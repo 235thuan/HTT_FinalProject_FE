@@ -1,10 +1,19 @@
 /* Đặt font-family chung cho toàn bộ trang */
 body {
+    display: flex;
     font-family: 'Poppins', sans-serif;
     max-width: 1200px; margin: auto;
-    position: relative;
+    /*position: relative;*/
     align-content: center;
     align-items: center;
+    flex-direction: column;
+
+}
+.cuongContent{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
 
 }
 
@@ -119,9 +128,10 @@ body {
 }
 /* Body */
 .image1-container {
-    position: absolute;
-    top: 134px;
-    left: 48px;
+    /*position: absolute;*/
+    /*top: 134px;*/
+    position: relative;
+    margin: auto;
     width: 1344px;
     height: 324px;
     border-radius: 12px;
@@ -129,11 +139,13 @@ body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
   }
   .image2-container {
-    position: absolute;
-    top: 397px;
-    left: 80px;
+      position: relative;
+     margin-top:13%;
+      margin-left:3%;
+    /*left: 80px;*/
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -339,7 +351,7 @@ body {
     left: 520px;
     width: 48px;
     height: 48px;
-    border-radius: 50%; 
+    border-radius: 50%;
     background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHwyMHx8cHJvZmlsZXxlbnwxfHx8fDE2NTU4MzQyODA&ixlib=rb-1.2.1&q=80&w=1080');
     background-position: center center;
     background-size: cover;
@@ -388,7 +400,7 @@ body {
       left: 10px;
       width: 48px;
       height: 48px;
-      border-radius: 50%; 
+      border-radius: 50%;
       background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHwyMHx8cHJvZmlsZXxlbnwxfHx8fDE2NTU4MzQyODA&ixlib=rb-1.2.1&q=80&w=1080');
       background-position: center center;
       background-size: cover;
@@ -438,7 +450,7 @@ body {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
 .image7-container{
     position: absolute;
@@ -566,7 +578,7 @@ body {
     height: 235px;
     background-color: #ffffff;
     box-shadow: 2px 2px 4px rgba(3, 3, 3, 0.1);
-    
+
 }
 .EducatorTube-text{
     position: absolute;
