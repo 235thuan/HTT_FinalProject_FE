@@ -512,7 +512,9 @@
                             background-size: cover;
                             background-repeat: no-repeat;
                         }
+
                     }
+
 
                     .home2122 {
                         color: #000000;
@@ -543,6 +545,7 @@
                         .home22211 {
                             margin-top: 20px;
                             width: 100%;
+                            transition: transform 0.3s ease, box-shadow 0.3s ease;
 
                             img {
                                 width: 100%;
@@ -553,6 +556,10 @@
                                 background-position: center center;
                                 background-size: cover;
                                 background-repeat: no-repeat;
+                            }
+                            img:hover {
+                                transform: translateY(-5px);
+                                box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
                             }
 
                         }

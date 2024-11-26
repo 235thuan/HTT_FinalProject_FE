@@ -8,45 +8,173 @@
 </head>
 <body>
     <!--Header-->
-    <div class="header">
-        <div class="icon-text-container">
-            <svg class="icon2" viewBox="0 0 24 24">
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>
-              </svg>
-            <!-- Text -->
-            <div class="text">
-                Mathemat
+<!--    <div class="header">-->
+<!--        <div class="icon-text-container">-->
+<!--            <svg class="icon2" viewBox="0 0 24 24">-->
+<!--                <path d="M0 0h24v24H0z" fill="none"></path>-->
+<!--                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path>-->
+<!--              </svg>-->
+<!--            &lt;!&ndash; Text &ndash;&gt;-->
+<!--            <div class="text">-->
+<!--                Mathemat-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    -->
+<!--        &lt;!&ndash; Input Field &ndash;&gt;-->
+<!--        <input class="input-field" type="text" placeholder="Search educational videos and resources" />-->
+<!--        -->
+<!--        <div class="browse-text">Browse</div>-->
+<!--        <div class="Analyt-text">Analyt</div>-->
+<!--        <div class="New-text">New</div>-->
+<!--        <div class="Recent-text">Recent</div>-->
+
+<!--        &lt;!&ndash; Icons &ndash;&gt;-->
+<!--        <svg class="icon1" viewBox="0 0 24 24" aria-hidden="true">-->
+<!--            <path d="M0 0h24v24H0z" fill="none"></path>-->
+<!--            <path d="M19 5v14H5V5h14m1.1-2H3.9c-.5 0-.9.4-.9.9v16.2c0 .4.4.9.9.9h16.2c.4 0 .9-.5.9-.9V3.9c0-.5-.5-.9-.9-.9zM11 7h6v2h-6V7zm0 4h6v2h-6v-2zm0 4h6v2h-6zM7 7h2v2H7zm0 4h2v2H7zm0 4h2v2H7z"></path>-->
+<!--        </svg>-->
+
+<!--        <svg class="icon3" viewBox="0 0 24 24" aria-hidden="true">-->
+<!--            <path d="M0 0h24v24H0z" fill="none"></path>-->
+<!--            <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"></path>-->
+<!--        </svg>-->
+
+<!--        <svg class="icon4" viewBox="0 0 24 24" aria-hidden="true">-->
+<!--            <path d="M0 0h24v24H0z" fill="none"></path>-->
+<!--            <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"></path>-->
+<!--        </svg>-->
+
+<!--        &lt;!&ndash; Profile Image &ndash;&gt;-->
+<!--        <div class="f" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHwyMHx8cHJvZmlsZXxlbnwxfHx8fDE2NTU4MzQyODA&ixlib=rb-1.2.1&q=80&w=1080');"></div>-->
+
+
+<!--    </div>-->
+
+    <div class="home1" >
+        <div class="home11">
+            <div class="home111">
+                <img src=".\image\homeIcon4.png">
+                </img>
+            </div>
+            <div class="home112">Đồ án nhóm 6</div>
+        </div>
+        <div class="home12">
+            <div class="home121">
+                <input class="home1211" type="text" placeholder="Tìm kiếm...">
             </div>
         </div>
-    
-        <!-- Input Field -->
-        <input class="input-field" type="text" placeholder="Search educational videos and resources" />
-        
-        <div class="browse-text">Browse</div>
-        <div class="Analyt-text">Analyt</div>
-        <div class="New-text">New</div>
-        <div class="Recent-text">Recent</div>
+        <div class="home13">
+            <div class="home131">
+                <div class="home1311">Item1</div>
+                <div class="home1311">Item2</div>
+                <div class="home1311">Item3</div>
+                <div class="home1311">Item4</div>
+            </div>
+            <div class="home132">
+                <div class="home1321">
+                    <img src=".\image\homeIcon1.png"></img>
+                </div>
+                <div class="home1321">
+                    <img src=".\image\homeIcon2.png"></img>
+                </div>
+                <div class="home1321">
+                    <img src=".\image\homeIcon3.png"></img>
+                </div>
+            </div>
+            <div class="home133">
+                <div class="home1331">
+                    <button onclick="showModal('registerModalContent')">Đăng ký</button>
+                    <div class="modal-overlay" id="registerModalContent">
+                        <div class="modal-content">
+                            <div>
+                                <span onclick="hideModal('registerModalContent')" class="close">
+                                    &times;</span>
+                            </div>
+                            <div class="modal-content1">
+                                <div class="modal-content11">
+                                    <img src=".\image\homeLogo.png" alt="">
+                                </div>
+                                <div class="modal-content12">Đăng Ký</div>
+                            </div>
+                            <div class="modal-content2">
+                                <input type="text" placeholder="Họ và tên">
+                            </div>
+                            <div class="modal-content2">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="modal-content2">
+                                <input type="password" placeholder="Mật khẩu">
+                            </div>
+                            <div class="modal-content2">
+                                <input type="password" placeholder="Xác nhận mật khẩu">
+                            </div>
+                            <div class="modal-content3">
+                                <div class="modal-content31">
+                                    <div class="modal-content311">
+                                        <input type="radio" name="userType" id="student">
+                                    </div>
+                                    <div class="modal-content312">
+                                        <label for="student">Sinh viên</label>
+                                    </div>
+                                </div>
+                                <div class="modal-content31">
+                                    <div class="modal-content311">
+                                        <input type="radio" name="userType" id="other">
+                                    </div>
+                                    <div class="modal-content312">
+                                        <label for="other">Khác</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-content4">
+                                <button>Đăng ký</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home1331">
+                    <button onclick="showModal('loginModalContent')">Đăng nhập</button>
+                    <div class="modal-overlay" id="loginModalContent">
+                        <div class="modal-content">
+                            <div>
+                                <span onclick="hideModal('loginModalContent')" class="close">
+                                    &times;</span>
+                            </div>
+                            <div class="modal-content1">
+                                <div class="modal-content11">
+                                    <img src=".\image\homeLogo.png" alt="">
+                                </div>
+                                <div class="modal-content12">Đăng nhập</div>
+                            </div>
+                            <div class="modal-content2">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="modal-content2">
+                                <input type="password" placeholder="Mật khẩu">
+                            </div>
+                            <div class="modal-content4">
+                                <!--                                <button>Đăng nhập</button>-->
+                                <button onclick="login()">Đăng nhập</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home1332">
+                    <img src="./image/homeAvatar.png" alt="" onclick="toggleDropdown()">
+                    <div id="dropdownMenu" class="dropdown-content" style="display: none;">
+                        <a href="../cuong/Trang%20cá%20nhân.html">Hồ sơ cá nhân</a>
+                        <a href="#settings">Cài đặt</a>
+                        <a href="#logout" onclick="logout()">Đăng xuất</a>
+                    </div>
+                </div>
 
-        <!-- Icons -->
-        <svg class="icon1" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M19 5v14H5V5h14m1.1-2H3.9c-.5 0-.9.4-.9.9v16.2c0 .4.4.9.9.9h16.2c.4 0 .9-.5.9-.9V3.9c0-.5-.5-.9-.9-.9zM11 7h6v2h-6V7zm0 4h6v2h-6v-2zm0 4h6v2h-6zM7 7h2v2H7zm0 4h2v2H7zm0 4h2v2H7z"></path>
-        </svg>
-
-        <svg class="icon3" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"></path>
-        </svg>
-
-        <svg class="icon4" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"></path>
-        </svg>
-
-        <!-- Profile Image -->
-        <div class="f" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDUzMDJ8MHwxfHNlYXJjaHwyMHx8cHJvZmlsZXxlbnwxfHx8fDE2NTU4MzQyODA&ixlib=rb-1.2.1&q=80&w=1080');"></div>
+            </div>
+        </div>
     </div>
+
+
+
+
     <!--Body-->
     <div class="image1-container"></div>
     <div class="image2-container"></div>
@@ -117,4 +245,68 @@
       </div>
     
 </body>
+
+<script>
+    function showModal(modalId) {
+        document.getElementById(modalId).style.display = 'flex';
+    }
+
+    function hideModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+    }
+
+    function login() {
+        // Hide all elements with the class 'home1331'
+        var elements = document.querySelectorAll('.home1331');
+        elements.forEach(function (element) {
+            element.style.display = 'none';
+        });
+
+        // Show all elements with the class 'home1332'
+        var showElements = document.querySelectorAll('.home1332');
+        showElements.forEach(function (element) {
+            element.style.display = 'block';
+        });
+
+        hideModal('loginModalContent'); // Assuming you want to close the modal on login
+    }
+
+    function logout() {
+        // Show all elements with the class 'home1331'
+        var elements = document.querySelectorAll('.home1331');
+        elements.forEach(function (element) {
+            element.style.display = 'block';
+        });
+
+        // Hide all elements with the class 'home1332'
+        var hideElements = document.querySelectorAll('.home1332');
+        hideElements.forEach(function (element) {
+            element.style.display = 'none';
+        });
+    }
+
+    function toggleDropdown() {
+        var dropdown = document.getElementById('dropdownMenu');
+        if (dropdown.style.display === 'none') {
+            dropdown.style.display = 'block';
+        } else {
+            dropdown.style.display = 'none';
+        }
+    }
+
+    // Optionally, add this to close the dropdown if clicked outside
+    window.onclick = function (event) {
+        if (!event.target.matches('.home1332 img')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === "block") {
+                    openDropdown.style.display = "none";
+                }
+            }
+        }
+    }
+
+
+</script>
 </html>
