@@ -40,7 +40,41 @@
             </div>
             <div class="home133">
                 <div class="home1331">
-                    <button onclick="showModal('registerModalContent')">Đăng ký</button>
+                    <img src="./image/homeIcon7.png" alt="Account" class="auth-image">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="auth-dropdown" id="authDropdown">
+                        <div class="dropdown-item" onclick="showModal('loginModalContent')">
+                            <img src="./image/homeIcon1.png" alt="">
+                            <span>Đăng nhập</span>
+                        </div>
+                        <div class="dropdown-item" onclick="showModal('registerModalContent')">
+                            <img src="./image/homeIcon2.png" alt="">
+                            <span>Đăng ký</span>
+                        </div>
+                    </div>
+                    <div class="modal-overlay" id="loginModalContent">
+                        <div class="modal-content">
+                            <div>
+                                <span onclick="hideModal('loginModalContent')" class="close">
+                                    &times;</span>
+                            </div>
+                            <div class="modal-content1">
+                                <div class="modal-content11">
+                                    <img src=".\image\homeLogo.png" alt="">
+                                </div>
+                                <div class="modal-content12">Đăng nhập</div>
+                            </div>
+                            <div class="modal-content2">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="modal-content2">
+                                <input type="password" placeholder="Mật khẩu">
+                            </div>
+                            <div class="modal-content4">
+                                <button onclick="login()">Đăng nhập</button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="modal-overlay" id="registerModalContent">
                         <div class="modal-content">
                             <div>
@@ -89,33 +123,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="home1331">
-                    <button onclick="showModal('loginModalContent')">Đăng nhập</button>
-                    <div class="modal-overlay" id="loginModalContent">
-                        <div class="modal-content">
-                            <div>
-                                <span onclick="hideModal('loginModalContent')" class="close">
-                                    &times;</span>
-                            </div>
-                            <div class="modal-content1">
-                                <div class="modal-content11">
-                                    <img src=".\image\homeLogo.png" alt="">
-                                </div>
-                                <div class="modal-content12">Đăng nhập</div>
-                            </div>
-                            <div class="modal-content2">
-                                <input type="text" placeholder="Email">
-                            </div>
-                            <div class="modal-content2">
-                                <input type="password" placeholder="Mật khẩu">
-                            </div>
-                            <div class="modal-content4">
-                                <!--                                <button>Đăng nhập</button>-->
-                                <button onclick="login()">Đăng nhập</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="home1332">
                     <img src="./image/homeAvatar.png" alt="" onclick="toggleDropdown()">
                     <div id="dropdownMenu" class="dropdown-content" style="display: none;">
@@ -125,6 +132,28 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </div>
+
+    <div class="home1-2">
+        <div class="video-slider">
+            <a class="slider-prev" onclick="changeVideo(-1)">❮</a>
+            <a class="slider-next" onclick="changeVideo(1)">❯</a>
+            <video id="mainVideo" autoplay muted loop>
+                <source src="./video/ab.mp4" type="video/mp4">
+                <source src="./video/abc.mp4" type="video/mp4">
+                <source src="./video/abcd.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="slider-navigation">
+                <span class="nav-dot" onclick="goToVideo(0)"></span>
+                <span class="nav-dot" onclick="goToVideo(1)"></span>
+                <span class="nav-dot" onclick="goToVideo(2)"></span>
+            </div>
+            <div class="slider-caption">
+                <h2>Nền tảng vững chắc</h2>
+                <p>Hội nhập quốc tế - Vươn tới tương lai</p>
             </div>
         </div>
     </div>
@@ -183,6 +212,19 @@
             <div class="home231">Danh mục môn học</div>
             <div class="home232">
                 <div class="home2321">
+                    <button>Button1</button>
+                    <button>Button1</button>
+                    <button>Button1</button>
+                    <button>Button1</button>
+                    <button>Button1</button>
+                    <button>Button1</button>
+                    <button>Button1</button>
+                    <button>Button1</button>
+                    <button>Button1</button>
+                    <button>Button1</button>
+                    <button>Button1</button>
+                    <button>Button1</button>
+                    <button>Button1</button>
                     <button>Button1</button>
                     <button>Button1</button>
                     <button>Button1</button>
@@ -381,7 +423,60 @@
         }
     }
 
+    let dropdownVisible = false;
+    const authImage = document.querySelector('.auth-image');
+    const authDropdown = document.getElementById('authDropdown');
 
+    authImage.addEventListener('mouseenter', () => {
+        dropdownVisible = !dropdownVisible;
+        authDropdown.style.display = dropdownVisible ? 'block' : 'none';
+    });
+
+    // Video navigation function
+    function changeVideo(direction) {
+        const video = document.getElementById('mainVideo');
+        const sources = video.getElementsByTagName('source');
+        const dots = document.getElementsByClassName('nav-dot');
+        const currentSrc = video.currentSrc;
+        let nextIndex = 0;
+
+        // Find current video index
+        for(let i = 0; i < sources.length; i++) {
+            if(sources[i].src === currentSrc) {
+                nextIndex = (i + direction + sources.length) % sources.length;
+                break;
+            }
+        }
+
+        // Update dots
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        dots[nextIndex].className += " active";
+
+        // Change video
+        video.src = sources[nextIndex].src;
+        video.play();
+    }
+
+    function goToVideo(index) {
+        const video = document.getElementById('mainVideo');
+        const sources = video.getElementsByTagName('source');
+        const dots = document.getElementsByClassName('nav-dot');
+        
+        // Update dots
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        dots[index].className += " active";
+        
+        // Change video
+        video.src = sources[index].src;
+        video.play();
+    }
+
+    // Set first dot as active initially
+    document.getElementsByClassName('nav-dot')[0].className += " active";
 </script>
 </body>
 </html>
