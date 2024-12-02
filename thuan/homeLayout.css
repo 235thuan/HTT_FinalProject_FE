@@ -249,7 +249,7 @@
                         }
 
                         .modal-overlay {
-                            display: none; /* Initially hidden */
+                            display: none;
                             position: fixed;
                             justify-content: center;
                             align-items: center;
@@ -260,6 +260,7 @@
                             background-color: rgba(217, 236, 255, 0.5);
                             border-radius: 12px;
                             box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+                            z-index: 9999;
                         }
 
                         .modal-content {
@@ -267,7 +268,6 @@
                             padding: 20px;
                             border-radius: 5px;
                             width: 471px;
-
                             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                             position: relative;
                             color: #f9a825;
@@ -275,140 +275,144 @@
                             font-family: "Open Sans";
                             font-weight: 700;
                             line-height: 38px;
+                            z-index: 10000;
 
-                            .modal-content1 {
-                                display: flex;
-                                flex-direction: row;
-                                width: 100%;
+                            .close {
+                                position: absolute;
+                                right: 20px;
+                                top: 10px;
+                                font-size: 28px;
+                                font-weight: bold;
+                                color: #f9a825;
+                                cursor: pointer;
+                                transition: color 0.3s ease;
 
-                                .modal-content11 {
-                                    flex: 1 1 auto;
-
-                                    img {
-                                        color: #f9a825;
-                                        fill: #f9a825;
-                                        font-size: 64px;
-                                        width: 64px;
-                                        height: 64px;
-                                    }
+                                &:hover {
+                                    color: #ff4444;
                                 }
+                            }
+                        }
 
-                                .modal-content12 {
-                                    align-content: center;
-                                    flex: 4 4 auto;
-                                    text-align: left;
+                        .modal-content1 {
+                            display: flex;
+                            flex-direction: row;
+                            width: 100%;
+
+                            .modal-content11 {
+                                flex: 1 1 auto;
+
+                                img {
+                                    color: #f9a825;
+                                    fill: #f9a825;
+                                    font-size: 64px;
+                                    width: 64px;
+                                    height: 64px;
                                 }
                             }
 
-                            .modal-content2 {
-                                width: 100%;
-                                flex-direction: row;
-
-                                input {
-                                    margin-bottom: 10px;
-                                    margin-top: 10px;
-                                    width: 90%;
-                                    height: 46px;
-                                    padding: 0px 8px;
-                                    border: 0.909091px solid #cbcbd0;
-                                    box-sizing: border-box;
-                                    border-radius: 12px;
-                                    background-color: #ffffff;
-                                    color: #94a3b8;
-                                    font-size: 14px;
-                                    font-family: "Open Sans";
-                                    font-weight: 500;
-                                    line-height: 45.99431610107422px;
-                                    outline: none;
-
-                                }
+                            .modal-content12 {
+                                align-content: center;
+                                flex: 4 4 auto;
+                                text-align: left;
                             }
+                        }
 
-                            .modal-content3 {
-                                display: flex;
-                                margin-left: 25px;
+                        .modal-content2 {
+                            width: 100%;
+                            flex-direction: row;
+
+                            input {
                                 margin-bottom: 10px;
+                                margin-top: 10px;
+                                width: 90%;
+                                height: 46px;
+                                padding: 0px 8px;
+                                border: 0.909091px solid #cbcbd0;
+                                box-sizing: border-box;
+                                border-radius: 12px;
+                                background-color: #ffffff;
+                                color: #94a3b8;
+                                font-size: 14px;
+                                font-family: "Open Sans";
+                                font-weight: 500;
+                                line-height: 45.99431610107422px;
+                                outline: none;
 
-                                .modal-content31 {
-                                    display: flex;
-                                    align-items: center;
-                                    margin-right: 10px;
+                            }
+                        }
 
-                                    .modal-content311 {
-                                        input {
-                                            width: calc(100% - 8px);
-                                            height: calc(100% - 8px);
-                                            transform: translate(-50%, -50%);
-                                            transition: left 0.3s ease;
-                                            border-radius: 6px;
-                                            background-color: rgba(2, 117, 255, 1);
+                        .modal-content3 {
+                            display: flex;
+                            margin-left: 25px;
+                            margin-bottom: 10px;
 
-                                        }
+                            .modal-content31 {
+                                display: flex;
+                                align-items: center;
+                                margin-right: 10px;
 
-                                        input[type="radio"] {
-                                            /* Scale up the radio button */
-                                            transform: scale(1.5); /* Adjust the scaling factor to your preference */
-                                            /* Optional: to vertically align the scaled radio with labels or other inline elements */
-                                            vertical-align: middle;
-                                        }
-
+                                .modal-content311 {
+                                    input {
+                                        width: calc(100% - 8px);
+                                        height: calc(100% - 8px);
+                                        transform: translate(-50%, -50%);
+                                        transition: left 0.3s ease;
+                                        border-radius: 6px;
+                                        background-color: rgba(2, 117, 255, 1);
 
                                     }
 
-                                    .modal-content312 {
-                                        margin-top: -5px;
-                                        margin-left: 10px;
-                                        margin-right: 20px;
-
-                                        label {
-
-                                            color: #f9a825;
-                                            font-size: 14px;
-                                            font-family: "Open Sans";
-                                            font-weight: 500;
-                                            line-height: 16px;
+                                    input[type="radio"] {
+                                        /* Scale up the radio button */
+                                        transform: scale(1.5); /* Adjust the scaling factor to your preference */
+                                        /* Optional: to vertically align the scaled radio with labels or other inline elements */
+                                        vertical-align: middle;
+                                    }
 
 
-                                        }
+                                }
+
+                                .modal-content312 {
+                                    margin-top: -5px;
+                                    margin-left: 10px;
+                                    margin-right: 20px;
+
+                                    label {
+
+                                        color: #f9a825;
+                                        font-size: 14px;
+                                        font-family: "Open Sans";
+                                        font-weight: 500;
+                                        line-height: 16px;
+
+
                                     }
                                 }
                             }
+                        }
 
-                            .modal-content4 {
-                                margin-top: 20px;
-                                margin-bottom: 20px;
+                        .modal-content4 {
+                            margin-top: 20px;
+                            margin-bottom: 20px;
 
-                                button {
-                                    cursor: pointer;
-                                    width: 90%;
-                                    height: 48px;
-                                    padding: 0px 8px;
-                                    border: 0;
-                                    box-sizing: border-box;
-                                    border-radius: 12px;
-                                    background-color: #f9a825;
-                                    color: #000000;
-                                    font-size: 16px;
-                                    font-family: "Open Sans";
-                                    line-height: 19px;
-                                    outline: none;
+                            button {
+                                cursor: pointer;
+                                width: 90%;
+                                height: 48px;
+                                padding: 0px 8px;
+                                border: 0;
+                                box-sizing: border-box;
+                                border-radius: 12px;
+                                background-color: #f9a825;
+                                color: #000000;
+                                font-size: 16px;
+                                font-family: "Open Sans";
+                                line-height: 19px;
+                                outline: none;
 
-                                }
                             }
-
                         }
 
-                        .close {
-                            position: absolute;
-                            right: 10px;
-                            top: 0;
-                            font-size: 40px;
-                            cursor: pointer;
-                        }
-
-                        .close:hover {
-                            color: red;
-                        }
                     }
 
                     .home1332 {
