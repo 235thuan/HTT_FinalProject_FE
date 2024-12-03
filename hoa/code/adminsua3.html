@@ -5,70 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Grid Layout</title>
     <link rel="stylesheet" href="adminsua3.css">
+    <link rel="stylesheet" href="../../vuong/styles/common.css"/>
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            rel="stylesheet"
+
+    />
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="header1">
-                <img src="/image/admin.png" alt="" />
-                <h1>Admin</h1>
-                <p></p>
+        <header class="header">
+            <div class="logo" >
+                <i class="fa-solid fa-arrow-left">Mathemat</i>
+                Mathemat
             </div>
-            <div class="header2">
-                <img src="/image/caidat.png" alt="" />
-                <img src="/image/thongbao.png" alt="" />
-                <img src="/image/nguoidung.png" alt="" />
-                <h1></h1>
-                <p></p>
-            </div>
-            
+            <input
+                    type="text"
+                    class="search-bar"
+                    placeholder="Search educational videos and resources" style="z-index: -1"
+            />
+    
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <a href="#">Browse</a>
+                <a href="#">Analytics</a>
+                <a href="#">New</a>
+                <a href="#">Recent</a>
+                <div>
+                    <a href="#" class="newspaper-icon"
+                    ><i class="fa-regular fa-newspaper"></i
+                    ></a>
+                    <a href="#" class="message-icon"
+                    ><i class="fa-regular fa-message"></i
+                    ></a>
+                    <a href="#" class="bell-icon"><i class="fa-regular fa-bell"></i></a>
+                </div>
+                <a href="#" class="profile-icon"><i class="fa-solid fa-user"></i></a>
+            </nav>
+    
+            <!-- Menu Icon (Hamburger) -->
+            <button class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </button>
         </header>
 
-        <nav >
-            <ul>
-            <div class="Qlnv">
-                <button>
-                    <img src="/image/nhanvien.png" height="20px" width="20px" />
-                </button>
-                <h2><i>Quản Lý Nhân Viên</i></h2>
-            </div>
-            <div class="Qlsv">
-                <button>
-                    <img src="/image/sinhvien.png" height="20px" width="20px" />
-                </button>
-                <h2><i>Quản Lý Sinh Viên</i></h2>
-            </div>
-            <div class="Qlkh">
-                <button>
-                    <img src="/image/Icon graduation cap.png" height="20px" width="20px" />
-                </button>
-                <h2><i>Khóa Học</i></h2>
-            </div>
-            <div class="Qlmh">
-                <button>
-                    <img src="/image/monhoc.png" height="20px" width="20px" />
-                </button>
-                <h2><i>Môn Học</i></h2>
-            </div>
-            <div class="Qlhd">
-                <button>
-                    <img src="/image/hoadon.png" height="20px" width="20px" />
-                </button>
-                <h2><i>Hóa Đơn</i></h2>
-            </div>
-            <div class="Qld">
-                <button>
-                    <img src="/image/Icon graduation cap.png" height="20px" width="20px" />
-                </button>
-                <h2><i>Điểm</i></h2>
-            </div>
-            <div class="Qlvt">
-                <button>
-                    <img src="/image/vaitro.png" height="20px" width="20px" />
-                </button>
-                <h2><i>Vai Trò</i></h2>
-            </div>
-        </ul>
+        <nav>
+            <aside>
+                <div class="Qlkh">
+                    <label for="toggle-qlnv" class="dropdown-trigger">
+                        <img src="/hoa/image/nhanvien.png" height="20px" width="20px"/>
+                        <h2><i>Nhân viên</i></h2>
+                    </label>
+                    <input type="checkbox" id="toggle-qlnv" class="toggle-checkbox"/>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Sub-item 1</a></li>
+                        <li><a href="#">Sub-item 2</a></li>
+                    </ul>
+    
+                </div>
+                <div class="Qlsv">
+                    <label for="toggle-qlsv" class="dropdown-trigger">
+                        <img src="/hoa/image/sinhvien.png" height="20px" width="20px"/>
+                        <h2><i>Sinh viên</i></h2>
+                    </label>
+                    <input type="checkbox" id="toggle-qlsv" class="toggle-checkbox"/>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Sub-item 1</a></li>
+                        <li><a href="#">Sub-item 2</a></li>
+                    </ul>
+    
+                </div>
+                <div class="Qlkh">
+                    <label for="toggle-qlkh" class="dropdown-trigger">
+                        <img src="/hoa/image/monhoc.png" height="20px" width="20px"/>
+                        <h2><i>Khóa học</i></h2>
+                    </label>
+                    <input type="checkbox" id="toggle-qlkh" class="toggle-checkbox"/>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Sub-item 1</a></li>
+                        <li><a href="#">Sub-item 2</a></li>
+                    </ul>
+    
+                </div>
+                <div class="Qlmh">
+                    <label for="toggle-qlmh" class="dropdown-trigger">
+                        <img src="/hoa/image/monhoc.png" height="20px" width="20px"/>
+                        <h2><i>Môn học</i></h2>
+                    </label>
+                    <input type="checkbox" id="toggle-qlmh" class="toggle-checkbox"/>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Sub-item 1</a></li>
+                        <li><a href="#">Sub-item 2</a></li>
+                    </ul>
+    
+                </div>
+                <div class="Qlhd">
+                    <label for="toggle-qlhd" class="dropdown-trigger">
+                        <img src="/hoa/image/hoadon.png" height="20px" width="20px"/>
+                        <h2><i>Giao dịch</i></h2>
+                    </label>
+                    <input type="checkbox" id="toggle-qlhd" class="toggle-checkbox"/>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Sub-item 1</a></li>
+                        <li><a href="#">Sub-item 2</a></li>
+                    </ul>
+    
+                </div>
+                <div class="Qld">
+                    <label for="toggle-qld" class="dropdown-trigger">
+                        <img src="/hoa/image/Icon graduation cap.png" height="20px" width="20px"/>
+                        <h2><i>Điểm</i></h2>
+                    </label>
+                    <input type="checkbox" id="toggle-qld" class="toggle-checkbox"/>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Sub-item 1</a></li>
+                        <li><a href="#">Sub-item 2</a></li>
+                    </ul>
+    
+                </div>
+                <div class="Qlvt">
+                    <label for="toggle-qlvt" class="dropdown-trigger">
+                        <img src="/hoa/image/vaitro.png" height="20px" width="20px"/>
+                        <h2><i>Vai trò</i></h2>
+                    </label>
+                    <input type="checkbox" id="toggle-qlvt" class="toggle-checkbox"/>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Sub-item 1</a></li>
+                        <li><a href="#">Sub-item 2</a></li>
+                    </ul>
+    
+                </div>
+    
+            </aside>
         </nav>
 
         <main class="content">
@@ -158,5 +226,49 @@
             </form>
         </main>
     </div>
+    <footer class="footer">
+        <div class="footer-links">
+            <div>
+                <h4>EducatorTu</h4>
+                <p>Connect with us</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-more">
+                <div>
+                    <h4>Institution</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Discussion Forum</h4>
+                    <ul>
+                        <li><a href="#">For Educators</a></li>
+                        <li><a href="#">Adversting</a></li>
+                        <li><a href="#">Suppliers Disccussion</a></li>
+                        <li><a href="#">Board</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

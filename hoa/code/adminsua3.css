@@ -17,7 +17,7 @@ body {
         grid-template-columns: 1fr 3fr 1fr;
         grid-template-rows: auto 1fr auto;
         gap: 20px;
-        width: 180vb;
+        width: 125vb;
         margin: 20px auto;
         padding: 20px;
         height: 100vb;
@@ -72,6 +72,7 @@ body {
             margin: 10px;
             justify-content: space-between; /* Khoảng cách đều giữa các phần tử */
             border-radius: 25px;
+            cursor: pointer;
         }
         .nav img {
             width: 20px;
@@ -82,29 +83,63 @@ body {
             font-size: 0.45cm; /* Kích thước chữ */
             letter-spacing: 0.1px; /* Khoảng cách giữa các chữ */
         }
-        .Qlnv {
-            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
-        }
-        .Qlsv {
-            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
+        .Qlnv,.Qlsv,.Qlkh,.Qlmh,.Qlhd,.Qld,.Qlvt {
+            display: flex;
+            padding: 10px;
+
+            .button{
+                margin-right: 10px;
+            }
         }
 
-        .Qlkh {
-            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
-        }
-        .Qlmh {
-            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
-        }
-        .Qlhd {
-            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
-        }
-        .Qld {
-            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
-        }
-        .Qlvt {
-            display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử theo hàng ngang */
-        }
 
+        .Qlnv,.Qlsv,.Qlkh,.Qlmh,.Qlhd,.Qld,.Qlvt {
+            flex-direction: column;
+            position: relative;
+            width: 100%; /* Ensure the sidebar takes full width */
+
+            .dropdown-trigger {
+
+                background: none;
+                border: none;
+                text-align: left;
+                cursor: pointer;
+                display: flex;
+                h2 i{
+                    display: flex;
+
+                }
+                img{
+                    margin-right: 10px;
+                }
+            }
+
+            .toggle-checkbox {
+                display: none; /* Hide the checkbox */
+            }
+
+            .dropdown-content {
+                display: none;
+                width: calc(100% - 20px); /* Subtract some width to adjust for margin */
+                margin-left: 20px; /* Indent the dropdown content */
+                list-style: none;
+                padding: 0;
+            }
+
+            .toggle-checkbox:checked + .dropdown-content {
+                display: flex;
+                flex-direction: column;
+            }
+            .dropdown-content li a {
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                color: black;
+            }
+            .dropdown-content li a:hover {
+                background-color: #f1f1f1;
+            }
+        }
         h1 {
             text-align: center;
             font-size: 0.55cm; /* Kích thước chữ */
@@ -203,6 +238,98 @@ body {
         }
         
     }
+}
+
+
+/* Responsive cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+                    "header"
+                    "nav"
+                    "content"
+                    "sidebar"
+                    "footer";
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 20px;
+}
+
+.footer-links > div {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-more {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: start;
+    gap: 50px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #0073e6;
 }
 
 
